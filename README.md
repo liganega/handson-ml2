@@ -5,13 +5,13 @@
 
 ## 목차
 
-1. 한눈에 보는 머신러닝
-1. 머신러닝 프로젝트 처음부터 끝까지
-1. 분류
-1. 모델 훈련
-1. 서포트 벡터 머신
-1. 의사결정나무
-1. 앙상블 학습과 랜덤 포레스트
+1. [한눈에 보는 머신러닝](./notebooks/01_the_machine_learning_landscape.ipynb)
+1. [머신러닝 프로젝트 처음부터 끝까지](./notebooks/02_end_to_end_machine_learning_project.ipynb)
+1. [분류](./notebooks/03_classification.ipynb)
+1. [모델 훈련](./notebooks/04_training_linear_models.ipynb)
+1. [서포트 벡터 머신](./notebooks/05_support_vector_machines.ipynb)
+1. [의사결정나무](./notebooks/06_decision_trees.ipynb)
+1. [앙상블 학습과 랜덤 포레스트](07_ensemble_learning_and_random_forests.ipynb)
 1. ...
 
 ## 기타
