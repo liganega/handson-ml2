@@ -1,5 +1,20 @@
-Machine Learning Notebooks
-==========================
+핸즈온 머신러닝 (2판) 정리 노트북
+=======================
+
+저자의 주피터 노트북에 설명을 정리 요약하여 추가한 노트북을 제공한다. 
+
+## 목차
+
+1. 한눈에 보는 머신러닝
+1. 머신러닝 프로젝트 처음부터 끝까지
+1. 분류
+1. 모델 훈련
+1. 서포트 벡터 머신
+1. 의사결정나무
+1. 앙상블 학습과 랜덤 포레스트
+1. ...
+
+## 기타
 
 This project aims at teaching you the fundamentals of Machine Learning in
 python. It contains the example code and solutions to the exercises in the second edition of my O'Reilly book [Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/):
