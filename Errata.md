@@ -45,6 +45,10 @@
     - 번역 문장: ... 훈련 샘플의 가중치를 상대적으로 높입니다. 
     - 수정 문장: ... 훈련 샘플의 상대적 가중치를 높입니다. 
 
+* 259쪽, 밑에서 둘째 줄
+    - 번역 문장: ... 가중치가 적용된 에러율 ...
+    - 수정 문장: ... 가중치 적용 오차율 ...
+
 
 ## 6장
 * 6장 전체: 아래 영어 단어들의 한글 표현을 통계학 분야에서 보다 일반적으로 사용되는 표현으로 바꿔 사용한다. 
@@ -123,7 +127,7 @@
   - multiclass classifier를 다중 분류기, multiclass classification을 다중 분류로 번역하였음.
   - 문제점: 2장에서 multiple regression을 다중 회귀로 번역하였음. 그런데 multiclass의 의미는 multiple 과 엄연히 다름.
   - 일부 사람들은 multiclass를 다중 클래스 번역함. 이 점에 동의함.
-  - 따라서 multiclass classifier는 다중 클래스 분류기 , multiclass classification은 다중 클래스 분류기를 사용하는 게 맞음.
+  - 따라서 multiclass classifier는 다중 클래스 분류기 , multiclass classification은 다중 클래스 분류기를 사용하는 게 맞음. (번역서 261쪽에 다중 클래스 용어를 사용하기도 함. 식 7-4 바로 아래)
   - 차라리 multiclass 대신에 multinomial을 사용해서 다항 분류기, 다항 분류 등으로 사용하면 혼란을 피할 수 있음.
 
 * 145쪽, 3.4절 첫 문단
