@@ -12,6 +12,7 @@
 1. [서포트 벡터 머신](./notebooks/05_support_vector_machines.ipynb)
 1. [의사결정나무](./notebooks/06_decision_trees.ipynb)
 1. [앙상블 학습과 랜덤 포레스트](./notebooks/07_ensemble_learning_and_random_forests.ipynb)
+1. [차원축소](./notebooks/08_dimensionality_reduction.ipynb)
 1. ...
 
 ## 기타
