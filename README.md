@@ -1,7 +1,12 @@
 핸즈온 머신러닝 (2판) 정리 노트북
 =======================
 
-저자의 주피터 노트북에 설명을 정리 요약하여 추가한 노트북을 제공한다. 
+오렐리앙 제롱(Aurelien Geron)의 핸즈온 머신러닝(2판)의 주피터 노트북에 설명을 정리 요약하여 추가하였습니다.
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/51aqYc1QyrL._SX379_BO1,204,203,200_.jpg" title="book" width="150" />
+
+<img src="https://www.hanbit.co.kr/data/books/B7033438574_l.jpg" title="book-kr" width="150" />
+
 
 ## 목차
 
@@ -10,51 +15,36 @@
     <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-01.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
-1. 머신러닝 프로젝트 처음부터 끝까지 
+2. 머신러닝 프로젝트 처음부터 끝까지 
     [[ipynb]](./notebooks/02_end_to_end_machine_learning_project.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-02.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
-1. 분류
+3. 분류
     [[ipynb]](./notebooks/03_classification.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-03.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
-1. 모델 훈련
+4. 모델 훈련
     [[ipynb]](./notebooks/04_training_linear_models.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-04.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
-1. 서포트 벡터 머신
+5. 서포트 벡터 머신
     [[ipynb]](./notebooks/05_support_vector_machines.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-05.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
-1. 의사결정나무
+6. 의사결정나무
     [[ipynb]](./notebooks/06_decision_trees.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-06.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
-1. 앙상블 학습과 랜덤 포레스트
+7. 앙상블 학습과 랜덤 포레스트
     [[ipynb]](./notebooks/07_ensemble_learning_and_random_forests.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-07.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
-1. 차원축소
+8. 차원축소
     [[ipynb]](./notebooks/08_dimensionality_reduction.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-08.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
 1. ...
 
-## 기타
-
-This project aims at teaching you the fundamentals of Machine Learning in
-python. It contains the example code and solutions to the exercises in the second edition of my O'Reilly book [Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/):
-
-<img src="https://images-na.ssl-images-amazon.com/images/I/51aqYc1QyrL._SX379_BO1,204,203,200_.jpg" title="book" width="150" />
-
-**Note**: If you are looking for the first edition notebooks, check out [ageron/handson-ml](https://github.com/ageron/handson-ml).
 
 ## 온라인 학습
 
@@ -74,4 +64,4 @@ python. It contains the example code and solutions to the exercises in the secon
 
 ## 감사의 글
 
-자료를 공개한 저자에게 깊은 감사를 드립니다. 
+자료를 공개한 저자에게 깊은 감사를 드립니다.(Author's) 
