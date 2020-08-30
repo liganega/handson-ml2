@@ -9,7 +9,6 @@
   </div>
   <div class="column">
     <img src="https://images-na.ssl-images-amazon.com/images/I/51aqYc1QyrL._SX379_BO1,204,203,200_.jpg" alt="book" style="width:100%">
-</td>
   </div>
 </div>
 
