@@ -5,7 +5,8 @@
 
 ## 목차
 
-1. [한눈에 보는 머신러닝](./notebooks/01_the_machine_learning_landscape.ipynb)
+1. [한눈에 보는 머신러닝](./notebooks/01_the_machine_learning_landscape.ipynb) 
+    (준비중 <img src="notebooks/images/baustelle.png" width="30"/>)
 1. [머신러닝 프로젝트 처음부터 끝까지](./notebooks/02_end_to_end_machine_learning_project.ipynb)
 1. [분류](./notebooks/03_classification.ipynb)
 1. [모델 훈련](./notebooks/04_training_linear_models.ipynb)
