@@ -60,15 +60,14 @@ python. It contains the example code and solutions to the exercises in the secon
 
 **주의**: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.
 
-* **추천**: [구글 코랩](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/):
-<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="30" /></a>
+* **추천**: [구글 코랩](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/)
+<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><div> style="top:-10px;"<img src="https://colab.research.google.com/img/colab_favicon.ico" width="30"/></div></a>
 
 * Binder: 추후 지원 예정
 
 ## 오프라인 학습
 
-* Docker 사용 추천
-    * 저자가 제공하는 [도커 이미지](https://hub.docker.com/r/ageron/handson-ml2/tags) 사용 추천
+* 추천: 저자가 제공하는 [도커 이미지](https://hub.docker.com/r/ageron/handson-ml2/tags) 사용
 
 * 머신러닝/딥러닝 개발환경을 스스로 준비하는 일은 간단하지 않음.
     * 그래도 시도하고자 할 경우 [저자 설명](INSTALL.md) 참조
