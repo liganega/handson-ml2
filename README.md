@@ -61,7 +61,7 @@ python. It contains the example code and solutions to the exercises in the secon
 **주의**: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.
 
 * **추천**: [구글 코랩](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/)
-<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><div> style="top:-10px;"<img src="https://colab.research.google.com/img/colab_favicon.ico" width="30"/></div></a>
+<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><div style="top:-10px;"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="30"/></div></a>
 
 * Binder: 추후 지원 예정
 
