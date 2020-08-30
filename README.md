@@ -57,12 +57,11 @@ python. It contains the example code and solutions to the exercises in the secon
 **Note**: If you are looking for the first edition notebooks, check out [ageron/handson-ml](https://github.com/ageron/handson-ml).
 
 ## 온라인 학습
-아래 방식 중 하나 사용 가능
 
 **주의**: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.
 
 * **추천**: [구글 코랩](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/):
-<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="90" /></a>
+<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="30" /></a>
 
 * Binder: 추후 지원 예정
 
