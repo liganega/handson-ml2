@@ -64,4 +64,4 @@
 
 ## 감사의 글
 
-자료를 공개한 저자에게 깊은 감사를 드립니다.(The work provided by Aur&eacute;lien G&eacute;ron is deeply appreciated.) 
+자료를 공개한 저자에게 깊은 감사를 드립니다(The work provided by Aur&eacute;lien G&eacute;ron is deeply appreciated). 
