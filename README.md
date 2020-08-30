@@ -1,7 +1,7 @@
 핸즈온 머신러닝 (2판) 정리 노트북
 =======================
 
-오렐리앙 제롱(Aur&eacute;lien G&eacute;ron)의 핸즈온 머신러닝(2판)의 주피터 노트북에 설명을 정리 요약하여 추가하였습니다.
+오렐리앙 제롱(Aur&eacute;lien G&eacute;ron)의 핸즈온 머신러닝(2판)의 주피터 노트북에 설명이 추가됨.
 
 <div align="center"><img src="https://www.hanbit.co.kr/data/books/B7033438574_l.jpg" title="book-kr" width="200"></div>
 
@@ -64,4 +64,4 @@
 
 ## 감사의 글
 
-자료를 공개한 저자에게 깊은 감사를 드립니다.(Author's) 
+자료를 공개한 저자에게 깊은 감사를 드립니다.(The work provided by Aur&eacute;lien G&eacute;ron is deeply appreciated.) 
