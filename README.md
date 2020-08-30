@@ -56,60 +56,24 @@ python. It contains the example code and solutions to the exercises in the secon
 
 **Note**: If you are looking for the first edition notebooks, check out [ageron/handson-ml](https://github.com/ageron/handson-ml).
 
-## Quick Start
+## 온라인 학습
+아래 방식 중 하나 사용 가능
 
-### Want to play with these notebooks online without having to install anything?
-Use any of the following services.
+**주의**: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.
 
-**WARNING**: Please be aware that these services provide temporary environments: anything you do will be deleted after a while, so make sure you download any data you care about.
+* **추천**: [구글 코랩](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/):
+<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="90" /></a>
 
-* **Recommended**: open this repository in [Colaboratory](https://colab.research.google.com/github/ageron/handson-ml2/blob/master/):
-<a href="https://colab.research.google.com/github/ageron/handson-ml2/blob/master/"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="90" /></a>
+* Binder: 추후 지원 예정
 
-* Or open it in [Binder](https://mybinder.org/v2/gh/ageron/handson-ml2/master):
-<a href="https://mybinder.org/v2/gh/ageron/handson-ml2/master"><img src="https://matthiasbussonnier.com/posts/img/binder_logo_128x128.png" width="90" /></a>
+## 오프라인 학습
 
-  * _Note_: Most of the time, Binder starts up quickly and works great, but when handson-ml2 is updated, Binder creates a new environment from scratch, and this can take quite some time.
+* Docker 사용 추천
+    * 저자가 제공하는 [도커 이미지](https://hub.docker.com/r/ageron/handson-ml2/tags) 사용 추천
 
-* Or open it in [Deepnote](https://beta.deepnote.com/launch?template=data-science&url=https%3A//github.com/ageron/handson-ml2/blob/master/index.ipynb):
-<a href="https://beta.deepnote.com/launch?template=data-science&url=https%3A//github.com/ageron/handson-ml2/blob/master/index.ipynb"><img src="https://www.deepnote.com/static/illustration.png" width="150" /></a>
+* 머신러닝/딥러닝 개발환경을 스스로 준비하는 일은 간단하지 않음.
+    * 그래도 시도하고자 할 경우 [저자 설명](INSTALL.md) 참조
 
-### Just want to quickly look at some notebooks, without executing any code?
+## 감사의 글
 
-Browse this repository using [jupyter.org's notebook viewer](https://nbviewer.jupyter.org/github/ageron/handson-ml2/blob/master/index.ipynb):
-<a href="https://nbviewer.jupyter.org/github/ageron/handson-ml2/blob/master/index.ipynb"><img src="https://jupyter.org/assets/nav_logo.svg" width="150" /></a>
-
-_Note_: [github.com's notebook viewer](index.ipynb) also works but it is slower and the math equations are not always displayed correctly.
-
-### Want to run this project using a Docker image?
-Read the [Docker instructions](https://github.com/ageron/handson-ml2/tree/master/docker).
-
-### Want to install this project on your own machine?
-
-Start by installing [Anaconda](https://www.anaconda.com/distribution/) (or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)), [git](https://git-scm.com/downloads), and if you have a TensorFlow-compatible GPU, install the [GPU driver](https://www.nvidia.com/Download/index.aspx).
-
-Next, clone this project by opening a terminal and typing the following commands (do not type the first `$` signs on each line, they just indicate that these are terminal commands):
-
-    $ git clone https://github.com/ageron/handson-ml2.git
-    $ cd handson-ml2
-
-If you want to use a GPU, then edit `environment.yml` (or `environment-windows.yml` on Windows) and replace `tensorflow=2.0.0` with `tensorflow-gpu=2.0.0`. Also replace `tensorflow-serving-api==2.0.0` with `tensorflow-serving-api-gpu==2.0.0`.
-
-Next, run the following commands:
-
-    $ conda env create -f environment.yml # or environment-windows.yml on Windows
-    $ conda activate tf2
-    $ python -m ipykernel install --user --name=python3
-
-Then if you're on Windows, run the following command:
-
-    $ pip install --no-index -f https://github.com/Kojoley/atari-py/releases atari_py
-
-Finally, start Jupyter:
-
-    $ jupyter notebook
-
-If you need further instructions, read the [detailed installation instructions](INSTALL.md).
-
-## Contributors
-I would like to thank everyone who contributed to this project, either by providing useful feedback, filing issues or submitting Pull Requests. Special thanks go to Haesun Park who helped on some of the exercise solutions, and to Steven Bunkley and Ziembla who created the `docker` directory. Thanks as well to github user SuperYorio for helping out on the coding exercise solutions.
+자료를 공개한 저자에게 깊은 감사를 드립니다. 
