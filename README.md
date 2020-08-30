@@ -9,6 +9,8 @@
 <img src="https://www.hanbit.co.kr/data/books/B7033438574_l.jpg" title="book-kr" width="150" />
 </td>
 <td>
+</td>
+<td>
 <img src="https://images-na.ssl-images-amazon.com/images/I/51aqYc1QyrL._SX379_BO1,204,203,200_.jpg" title="book" width="150" />
 </td>
 </tr>
