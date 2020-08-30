@@ -5,17 +5,46 @@
 
 ## 목차
 
-1. 한눈에 보는 머신러닝 [[ipyng]](./notebooks/01_the_machine_learning_landscape.ipynb) 
+1. 한눈에 보는 머신러닝 
+    [[ipynb]](./notebooks/01_the_machine_learning_landscape.ipynb) 
     <img src="notebooks/images/baustelle.png" width="20"/>
     [[slide]](./notebooks/slides/handsOnML-slide-01.pdf)
     <img src="notebooks/images/baustelle.png" width="20"/>    
-1. [머신러닝 프로젝트 처음부터 끝까지](./notebooks/02_end_to_end_machine_learning_project.ipynb)
-1. [분류](./notebooks/03_classification.ipynb)
-1. [모델 훈련](./notebooks/04_training_linear_models.ipynb)
-1. [서포트 벡터 머신](./notebooks/05_support_vector_machines.ipynb)
-1. [의사결정나무](./notebooks/06_decision_trees.ipynb)
-1. [앙상블 학습과 랜덤 포레스트](./notebooks/07_ensemble_learning_and_random_forests.ipynb)
-1. [차원축소](./notebooks/08_dimensionality_reduction.ipynb)
+1. 머신러닝 프로젝트 처음부터 끝까지 
+    [[ipynb]](./notebooks/02_end_to_end_machine_learning_project.ipynb)
+    <img src="notebooks/images/baustelle.png" width="20"/>
+    [[slide]](./notebooks/slides/handsOnML-slide-02.pdf)
+    <img src="notebooks/images/baustelle.png" width="20"/>    
+1. 분류
+    [[ipynb]](./notebooks/03_classification.ipynb)
+    <img src="notebooks/images/baustelle.png" width="20"/>
+    [[slide]](./notebooks/slides/handsOnML-slide-03.pdf)
+    <img src="notebooks/images/baustelle.png" width="20"/>    
+1. 모델 훈련
+    [[ipynb]](./notebooks/04_training_linear_models.ipynb)
+    <img src="notebooks/images/baustelle.png" width="20"/>
+    [[slide]](./notebooks/slides/handsOnML-slide-04.pdf)
+    <img src="notebooks/images/baustelle.png" width="20"/>    
+1. 서포트 벡터 머신
+    [[ipynb]](./notebooks/05_support_vector_machines.ipynb)
+    <img src="notebooks/images/baustelle.png" width="20"/>
+    [[slide]](./notebooks/slides/handsOnML-slide-05.pdf)
+    <img src="notebooks/images/baustelle.png" width="20"/>    
+1. 의사결정나무
+    [[ipynb]](./notebooks/06_decision_trees.ipynb)
+    <img src="notebooks/images/baustelle.png" width="20"/>
+    [[slide]](./notebooks/slides/handsOnML-slide-06.pdf)
+    <img src="notebooks/images/baustelle.png" width="20"/>    
+1. 앙상블 학습과 랜덤 포레스트
+    [[ipynb]](./notebooks/07_ensemble_learning_and_random_forests.ipynb)
+    <img src="notebooks/images/baustelle.png" width="20"/>
+    [[slide]](./notebooks/slides/handsOnML-slide-07.pdf)
+    <img src="notebooks/images/baustelle.png" width="20"/>    
+1. 차원축소
+    [[ipynb]](./notebooks/08_dimensionality_reduction.ipynb)
+    <img src="notebooks/images/baustelle.png" width="20"/>
+    [[slide]](./notebooks/slides/handsOnML-slide-08.pdf)
+    <img src="notebooks/images/baustelle.png" width="20"/>    
 1. ...
 
 ## 기타
