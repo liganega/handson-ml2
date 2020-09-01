@@ -11,12 +11,10 @@
 1. 한눈에 보는 머신러닝 
     [[ipynb]](./notebooks/01_the_machine_learning_landscape.ipynb) 
     <img src="notebooks/images/baustelle.png" width="20"/>
-    [[slide]](./notebooks/slides/handsOnML-slide-01.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>    
+    [[slide]](./notebooks/slides/handsOnML-slide-01.pdf)
 2. 머신러닝 프로젝트 처음부터 끝까지 
     [[ipynb]](./notebooks/02_end_to_end_machine_learning_project.ipynb)
-    [[slide]](./notebooks/slides/handsOnML-slide-02.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>    
+    [[slide]](./notebooks/slides/handsOnML-slide-02.pdf)
 3. 분류
     [[ipynb]](./notebooks/03_classification.ipynb)
     [[slide]](./notebooks/slides/handsOnML-slide-03.ipynb)
@@ -64,4 +62,4 @@
 
 ## 감사의 글
 
-자료를 공개한 저자에게 깊은 감사를 드립니다(The work provided by Aur&eacute;lien G&eacute;ron is deeply appreciated). 
+자료를 공개한 저자에게 깊은 감사를 드립니다(The work provided by Aur&eacute;lien G&eacute;ron is deeply appreciated). 또한 강의준비에 필요한 자료는 한빛미디어의 많은 도움을 받았음을 밝히며, 이에 대해 진심어린 감사함을 전합니다.
