@@ -14,7 +14,7 @@
     [[slide]](./slides/handson-ml2-slide-01.pdf)
 2. 머신러닝 프로젝트 처음부터 끝까지 
     [[ipynb]](./notebooks/02_end_to_end_machine_learning_project.ipynb)
-    [[slide]](./slides/handsOnML-slide-02.pdf)
+    [[slide]](./slides/handson-ml2-slide-02.pdf)
 3. 분류
     [[ipynb]](./notebooks/03_classification.ipynb)
     [[slide]](./slides/handson-ml2-slide-03.ipynb)

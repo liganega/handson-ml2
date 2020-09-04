@@ -1,10 +1,13 @@
-## Welcome to GitHub Pages
+## 핸즈온 머신러닝(2판)
 
 You can use the [editor on GitHub](https://github.com/liganega/handson-ml2/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### 목차
+
+- 1장 한 눈에 보는 머신러닝 [html](./slides/handson-ml2-01.slides.html)
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
