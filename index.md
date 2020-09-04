@@ -6,8 +6,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### 목차
 
-- 1장 한 눈에 보는 머신러닝 
-    [[html]](./slides/handson-ml2-01.slides.html)&nbsp;&nbsp; 
+- 1장 한 눈에 보는 머신러닝 &nbsp;
+    [[html]](./slides/handson-ml2-01.slides.html) &nbsp;
     [[pdf]](./slides/handson-ml2-01-slides.pdf)
 
 
