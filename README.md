@@ -11,33 +11,33 @@
 1. 한눈에 보는 머신러닝 
     [[ipynb]](./notebooks/01_the_machine_learning_landscape.ipynb) 
     <img src="notebooks/images/baustelle.png" width="20"/>
-    [[slide]](./slides/handsOnML-slide-01.pdf)
+    [[slide]](./slides/handson-ml2-slide-01.pdf)
 2. 머신러닝 프로젝트 처음부터 끝까지 
     [[ipynb]](./notebooks/02_end_to_end_machine_learning_project.ipynb)
     [[slide]](./slides/handsOnML-slide-02.pdf)
 3. 분류
     [[ipynb]](./notebooks/03_classification.ipynb)
-    [[slide]](./slides/handsOnML-slide-03.ipynb)
+    [[slide]](./slides/handson-ml2-slide-03.ipynb)
     <img src="notebooks/images/baustelle.png" width="20"/>    
 4. 모델 훈련
     [[ipynb]](./notebooks/04_training_linear_models.ipynb)
-    [[slide]](./slides/handsOnML-slide-04.ipynb)
+    [[slide]](./slides/handson-ml2-slide-04.ipynb)
     <img src="notebooks/images/baustelle.png" width="20"/>    
 5. 서포트 벡터 머신
     [[ipynb]](./notebooks/05_support_vector_machines.ipynb)
-    [[slide]](./slides/handsOnML-slide-05.ipynb)
+    [[slide]](./slides/handson-ml2-slide-05.ipynb)
     <img src="notebooks/images/baustelle.png" width="20"/>    
 6. 의사결정나무
     [[ipynb]](./notebooks/06_decision_trees.ipynb)
-    [[slide]](./slides/handsOnML-slide-06.ipynb)
+    [[slide]](./slides/handson-ml2-slide-06.ipynb)
     <img src="notebooks/images/baustelle.png" width="20"/>    
 7. 앙상블 학습과 랜덤 포레스트
     [[ipynb]](./notebooks/07_ensemble_learning_and_random_forests.ipynb)
-    [[slide]](./slides/handsOnML-slide-07.ipynb)
+    [[slide]](./slides/handson-ml2-slide-07.ipynb)
     <img src="notebooks/images/baustelle.png" width="20"/>    
 8. 차원축소
     [[ipynb]](./notebooks/08_dimensionality_reduction.ipynb)
-    [[slide]](./slides/handsOnML-slide-08.ipynb)
+    [[slide]](./slides/handson-ml2-slide-08.ipynb)
     <img src="notebooks/images/baustelle.png" width="20"/>    
 1. ...
 
