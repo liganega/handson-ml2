@@ -6,8 +6,6 @@
 
 ### 목차
 
-**주의**: HTML을 이용하여 슬라이드를 사용할 경우 스페이스 키를 활용할 것.
-
 - 1장 한 눈에 보는 머신러닝 &nbsp;
     [[html]](./slides/handson-ml2-01.slides.html) &nbsp;
     [[pdf]](./slides/handson-ml2-01-slides.pdf)
@@ -19,6 +17,8 @@
     [[pdf]](./slides/handson-ml2-03-slides.pdf)
 - ...
 
+*주의: HTML을 이용하여 슬라이드를 사용할 경우 스페이스 키를 활용할 것.*
+
 ### 주피터 노트북 학습
 
 #### 온라인 학습
@@ -26,12 +26,11 @@
 추천 활용법: [구글 코랩](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/)
 <a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="30"/></a>
 
-**주의**: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.
+*주의: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.*
 
 #### 오프라인 학습
 
 추천 활용법: [GitHub:handson-ml2](https://github.com/liganega/handson-ml2)를 복제한 후에 도커 활용.
-
 도커 이미지는 아래 방법으로 구할 수 있음:
 - 방법1: 저자 제공 [도커 이미지](https://hub.docker.com/r/ageron/handson-ml2/tags) 사용
     * latest 또는 2020.03 Tag 사용 가능.
