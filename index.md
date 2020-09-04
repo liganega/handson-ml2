@@ -4,7 +4,7 @@
 
 자료를 공개한 저자에게 깊은 감사를 드립니다(The work provided by Aur&eacute;lien G&eacute;ron is deeply appreciated). 또한 강의준비에 필요한 자료는 한빛미디어의 많은 도움을 받았음을 밝히며, 이에 대해 진심어린 감사함을 전합니다.
 
-### 목차
+### 슬라이드 목차
 
 - 1장 한 눈에 보는 머신러닝 &nbsp;
     [[html]](./slides/handson-ml2-01.slides.html) &nbsp;
@@ -15,6 +15,11 @@
 - 3장 분류 &nbsp;
     [[html]](./slides/handson-ml2-03.slides.html) &nbsp;
     [[pdf]](./slides/handson-ml2-03-slides.pdf)
+- 4장 모델 훈련 &nbsp;
+- 5장 서포트 벡터 머신 &nbsp;
+- 6장 결정트리 &nbsp;
+- 7장 앙상블 학습과 랜덤 포레스트 &nbsp;
+- 8장 차원 축소 &nbsp;
 - ...
 
 *주의: HTML을 이용하여 슬라이드를 사용할 경우 전진과 후진을 `space`와 `shift+space` 키를 활용할 것.*
