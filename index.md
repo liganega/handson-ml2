@@ -7,15 +7,17 @@
 ### 슬라이드 목차
 
 - 1장 한 눈에 보는 머신러닝 &nbsp;
-    [[html]](./slides/handson-ml2-01.slides.html) &nbsp;
+    [[html]](./slides/handson-ml2-01.slides.html)
     [[pdf]](./slides/handson-ml2-01-slides.pdf)
 - 2장 머신러닝 프로젝트 처음부터 끝까지 &nbsp;
-    [[html]](./slides/handson-ml2-02.slides.html) &nbsp;
+    [[html]](./slides/handson-ml2-02.slides.html)
     [[pdf]](./slides/handson-ml2-02-slides.pdf)
 - 3장 분류 &nbsp;
-    [[html]](./slides/handson-ml2-03.slides.html) &nbsp;
+    [[html]](./slides/handson-ml2-03.slides.html)
     [[pdf]](./slides/handson-ml2-03-slides.pdf)
 - 4장 모델 훈련 &nbsp;
+    [[html]](./slides/handson-ml2-04.slides.html)
+    [[pdf]](./slides/handson-ml2-04-slides.pdf)
 - 5장 서포트 벡터 머신 &nbsp;
 - 6장 결정트리 &nbsp;
 - 7장 앙상블 학습과 랜덤 포레스트 &nbsp;
