@@ -13447,7 +13447,7 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p>교차 검증 결과가 95% 이상으로 매우 우수한 것으로 보임.</p>
+<li><p>교차 검증 결과가 95% 이상으로 매우 우수한 것으로 나옴.</p>
 </li>
 <li><p>하지만 무조건 '5 아님'이라고 찍는 분류기도 90%의 정확도를 보임.</p>
 </li>
@@ -13602,7 +13602,7 @@ $$F_1 = \frac{2}{\frac{1}{precision} + \frac{1}{recall}} = \frac{2\cdot precisio
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#44208;&#51221;-&#54632;&#49688;&#50752;-&#44208;&#51221;-&#51076;&#44247;&#44050;">&#44208;&#51221; &#54632;&#49688;&#50752; &#44208;&#51221; &#51076;&#44247;&#44050;<a class="anchor-link" href="#&#44208;&#51221;-&#54632;&#49688;&#50752;-&#44208;&#51221;-&#51076;&#44247;&#44050;">&#182;</a></h4><ul>
 <li>결정 함수(decision function): 분류기가 각 샘플의 점수를 계산할 때 사용</li>
-<li>결정 임계값(decision threshold): 이 값보다 갖거나 크면 양성 클래스로 분류, 아니면 음성 클래스</li>
+<li>결정 임계값(decision threshold): 결정 함수의 값이 이 값보다 갖거나 크면 양성 클래스로 분류, 아니면 음성 클래스</li>
 </ul>
 
 </div>
@@ -13704,7 +13704,7 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 </li>
 <li><p>따라서 좋은 분류기는 재현율은 높으면서 거짓 양성 비율은 최대한 낮게 유지해야함</p>
 </li>
-<li><p>ROC 곡선이 y축에 최대한 근접하는 결과가 나오도록 해야한.</p>
+<li><p>ROC 곡선이 y축에 최대한 근접하는 결과가 나오도록 해야함.</p>
 </li>
 <li><p>AUC: ROC 곡선 아래의 면적</p>
 <ul>
@@ -13719,7 +13719,17 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=""><div align="center"><img src="images/homl03-07.png" width="500" /></div><a class="anchor-link" href="#">&#182;</a></h4>
+<ul>
+<li>SGD와 랜덤 포레스트의 AUC 비교</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div align="center"><img src="images/homl03-07.png" width="500"/></div>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13733,16 +13743,23 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>다중 클래스 분류기(multiclass classifier): 세 개 이상의 클래스로 샘플을 분류하는 예측기<ul>
-<li>다항 분류기(multinomial classifier)라고도 부름</li>
-</ul>
-</li>
+<h3 id="&#45796;&#51473;-&#53364;&#47000;&#49828;-&#48516;&#47448;&#44592;(multiclass-classifier)">&#45796;&#51473; &#53364;&#47000;&#49828; &#48516;&#47448;&#44592;(multiclass classifier)<a class="anchor-link" href="#&#45796;&#51473;-&#53364;&#47000;&#49828;-&#48516;&#47448;&#44592;(multiclass-classifier)">&#182;</a></h3><ul>
+<li>세 개 이상의 클래스로 샘플을 분류하는 예측기</li>
 </ul>
 
 </div>
 </div>
 </div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>다항 분류기(multinomial classifier)라고도 부름</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13756,13 +13773,10 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>다중 클래스 분류를 지원하는 분류기<ul>
+<h4 id="&#45796;&#51473;-&#53364;&#47000;&#49828;-&#48516;&#47448;-&#51648;&#50896;-&#48516;&#47448;&#44592;">&#45796;&#51473; &#53364;&#47000;&#49828; &#48516;&#47448; &#51648;&#50896; &#48516;&#47448;&#44592;<a class="anchor-link" href="#&#45796;&#51473;-&#53364;&#47000;&#49828;-&#48516;&#47448;-&#51648;&#50896;-&#48516;&#47448;&#44592;">&#182;</a></h4><ul>
 <li>SGD 분류기</li>
 <li>랜덤 포레스트 분류기</li>
 <li>나이브 베이즈(naive Bayes) 분류기</li>
-</ul>
-</li>
 </ul>
 
 </div>
@@ -13771,12 +13785,9 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>이진 분류만 지원하는 분류기<ul>
+<h4 id="&#51060;&#51652;-&#48516;&#47448;&#47564;-&#51648;&#50896;&#54616;&#45716;-&#48516;&#47448;&#44592;">&#51060;&#51652; &#48516;&#47448;&#47564; &#51648;&#50896;&#54616;&#45716; &#48516;&#47448;&#44592;<a class="anchor-link" href="#&#51060;&#51652;-&#48516;&#47448;&#47564;-&#51648;&#50896;&#54616;&#45716;-&#48516;&#47448;&#44592;">&#182;</a></h4><ul>
 <li>로지스틱 회귀</li>
 <li>서포트 벡터 머신</li>
-</ul>
-</li>
 </ul>
 
 </div>
@@ -13808,22 +13819,65 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#51068;&#45824;&#45796;-&#48169;&#49885;(OvA-&#46608;&#45716;-OvR)">&#51068;&#45824;&#45796; &#48169;&#49885;(OvA &#46608;&#45716; OvR)<a class="anchor-link" href="#&#51068;&#45824;&#45796;-&#48169;&#49885;(OvA-&#46608;&#45716;-OvR)">&#182;</a></h4><ul>
 <li>OvA(One-versus-All) 또는 OvR(One-versus-Rest)</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>숫자 5 예측하기에서 사용했던 이진 분류 방식을 동일하게 모든 숫자에 대해서 실행</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>각 샘플에 대해 총 10번 각기 다른 이진 분류기를 실행</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>이후 각 분류기의 결정 점수 중에서 가장 높은 점수를 받은 클래스를 선택</li>
 </ul>
 
 </div>
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#51068;&#45824;&#51068;-&#48169;&#49885;-(OvO)">&#51068;&#45824;&#51068; &#48169;&#49885; (OvO)<a class="anchor-link" href="#&#51068;&#45824;&#51068;-&#48169;&#49885;-(OvO)">&#182;</a></h4><ul>
-<li><p>One-versus-One</p>
-</li>
-<li><p>조합 가능한 모든 일대일 분류 방식을 진행하여 가장 많은 결투(duell)를 이긴 숫자를 선택</p>
-</li>
+<li>One-versus-One</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>조합 가능한 모든 일대일 분류 방식을 진행하여 가장 많은 결투(duell)를 이긴 숫자를 선택</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><p>MNIST의 경우, 아래와 같이 총 9+8+...+1 = 45개의 결투를 판별하는 분류기를 이용</p>
 <ul>
 <li>훈련 세트의 각 샘플에 대해 총 45번 결투가 벌어지며 그중에서 가장 높은 점수를 얻는 숫자 $k$가 선택됨</li>
@@ -13833,36 +13887,50 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 
 </div>
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#50696;&#51228;:-OvO-&#54876;&#50857;">&#50696;&#51228;: OvO &#54876;&#50857;<a class="anchor-link" href="#&#50696;&#51228;:-OvO-&#54876;&#50857;">&#182;</a></h4><ul>
-<li><p>서프트 벡터 머신(SVC)</p>
-<ul>
+<li>서프트 벡터 머신(SVC)<ul>
 <li>OvO 선호</li>
 </ul>
-</li>
-<li><p>대부분의 이진 분류기는 일대다 전략을 선호</p>
 </li>
 </ul>
 
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>대부분의 이진 분류기는 일대다 전략을 선호</li>
+</ul>
+
+</div>
+</div>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#50696;&#51228;:-OvR-&#54876;&#50857;">&#50696;&#51228;: OvR &#54876;&#50857;<a class="anchor-link" href="#&#50696;&#51228;:-OvR-&#54876;&#50857;">&#182;</a></h4><ul>
-<li>이진 분류기를 일대일 전략 또는 일대다 전략으로 지정해서 학습하도록 만들 수 있음.<ul>
-<li>사이킷런의 경우: <code>OneVsOneClassifier</code> 또는 <code>OneVsRestClassifier</code> 사용</li>
-</ul>
-</li>
+<li>이진 분류기를 일대일 전략 또는 일대다 전략으로 지정해서 학습하도록 만들 수 있음.</li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>사이킷런의 경우: <code>OneVsOneClassifier</code> 또는 <code>OneVsRestClassifier</code> 사용</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13875,6 +13943,15 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>SGD 분류기는 다중 클래스 분류를 직접 지원</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>따라서 사이킷런의 OvR, OvO 등을 적용할 필요 없음</li>
 </ul>
 
@@ -13886,6 +13963,15 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#45796;&#51473;-&#53364;&#47000;&#49828;-&#48516;&#47448;&#44592;-&#49457;&#45733;-&#52769;&#51221;">&#45796;&#51473; &#53364;&#47000;&#49828; &#48516;&#47448;&#44592; &#49457;&#45733; &#52769;&#51221;<a class="anchor-link" href="#&#45796;&#51473;-&#53364;&#47000;&#49828;-&#48516;&#47448;&#44592;-&#49457;&#45733;-&#52769;&#51221;">&#182;</a></h4><ul>
 <li>다중 클래스 분류기의 성능 평가는 교차검증을 이용하여 정확도를 측정</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>MNIST의 경우 0부터 9까지 숫자가 균형 있게 분포되어 있어서 데이터 불균형의 문제가 발생하지 않음.</li>
 </ul>
 
@@ -13903,10 +13989,17 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>가능성이 높은 모델을 하나 찾았다고 가정하고 이 모델의 성능을 향상시킬 방법 모색<ul>
-<li>예제: 에러 종류 분석</li>
+<li>가능성이 높은 모델을 하나 찾았다고 가정하고 이 모델의 성능을 향상시킬 방법 모색</li>
 </ul>
-</li>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>예제: 에러 종류 분석하기</li>
 </ul>
 
 </div>
@@ -13918,55 +14011,50 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <h3 id="&#50724;&#52264;-&#54665;&#47148;-&#54876;&#50857;">&#50724;&#52264; &#54665;&#47148; &#54876;&#50857;<a class="anchor-link" href="#&#50724;&#52264;-&#54665;&#47148;-&#54876;&#50857;">&#182;</a></h3>
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>오차 행렬을 이미지로 표현 가능<ul>
+<li>손글씨 클래스 분류 모델의 오차 행렬을 이미지로 표현 가능</li>
 <li>대체로 잘 분류됨: 대각선이 밝음.</li>
 <li>5행은 좀 어두움. 숫자 5의 분류 정확도가 상대적으로 낮음</li>
-</ul>
-</li>
 </ul>
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id=""><div align="center"><img src="images/homl03-08.png" width="400" /></div><a class="anchor-link" href="#">&#182;</a></h4>
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>오차율 이미지<ul>
-<li>8을 적절히 분류됨<ul>
-<li>8행이 전반적으로 어두움</li>
+<h4 id="&#50724;&#52264;&#50984;-&#51060;&#48120;&#51648;">&#50724;&#52264;&#50984; &#51060;&#48120;&#51648;<a class="anchor-link" href="#&#50724;&#52264;&#50984;-&#51060;&#48120;&#51648;">&#182;</a></h4><ul>
+<li>8행이 전반적으로 어두움. <ul>
+<li>8은 잘 분류되었다는 의미임.</li>
 </ul>
 </li>
-<li>3과 5가 서로 많이 혼동됨<ul>
-<li>(3, 5)와 (5,3)의 위치가 상대적으로 밝음</li>
-</ul>
-</li>
+<li>(3, 5)와 (5,3)의 위치가 상대적으로 밝음.<ul>
+<li>3과 5가 서로 많이 혼동됨.</li>
 </ul>
 </li>
 </ul>
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id=""><div align="center"><img src="images/homl03-09.png" width="400" /></div><a class="anchor-link" href="#">&#182;</a></h4>
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14036,10 +14124,10 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>예제: 얼굴 인식 분류기<ul>
+<h3 id="&#50696;&#51228;:-&#50620;&#44404;-&#51064;&#49885;-&#48516;&#47448;&#44592;">&#50696;&#51228;: &#50620;&#44404; &#51064;&#49885; &#48516;&#47448;&#44592;<a class="anchor-link" href="#&#50696;&#51228;:-&#50620;&#44404;-&#51064;&#49885;-&#48516;&#47448;&#44592;">&#182;</a></h3><ul>
 <li>한 사진에 여러 사람이 포함된 경우, 인식된 사람마다 하나씩 꼬리표(tag)를 붙여야 함. </li>
-<li>앨리스, 밥, 찰리의 포함여부를 확인 할 때, 밥이 없는 경우: <code>[True, False, True]</code> 출력</li>
+<li>앨리스, 밥, 찰리의 포함여부를 확인 할 때, 밥이 없는 경우: <ul>
+<li><code>[True, False, True]</code> 출력</li>
 </ul>
 </li>
 </ul>
@@ -14050,30 +14138,37 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>예제: 숫자 분류<ul>
+<h3 id="&#50696;&#51228;:-&#49707;&#51088;-&#48516;&#47448;">&#50696;&#51228;: &#49707;&#51088; &#48516;&#47448;<a class="anchor-link" href="#&#50696;&#51228;:-&#49707;&#51088;-&#48516;&#47448;">&#182;</a></h3><ul>
 <li>7 이상인지 여부와 함께 홀수 여부도 동시 출력</li>
-<li>5가 입력될 때: <code>[False, True]</code> 출력</li>
+<li>5가 입력될 때: <ul>
+<li><code>[False, True]</code> 출력</li>
 </ul>
 </li>
 </ul>
 
 </div>
 </div>
-</div></div></section><section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#45796;&#51473;-&#47112;&#51060;&#48660;-&#48516;&#47448;-&#51648;&#50896;-&#47784;&#45944;">&#45796;&#51473; &#47112;&#51060;&#48660; &#48516;&#47448; &#51648;&#50896; &#47784;&#45944;<a class="anchor-link" href="#&#45796;&#51473;-&#47112;&#51060;&#48660;-&#48516;&#47448;-&#51648;&#50896;-&#47784;&#45944;">&#182;</a></h3><ul>
+<li>k-최근접 이웃 분류기</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>다중 레이블 분류기 지원 모델: k-최근접 이웃 분류기<ul>
 <li>사이킷런의 <code>KNeighborsClassifier</code></li>
 </ul>
-</li>
-</ul>
 
 </div>
 </div>
-</div><div class="fragment">
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14131,13 +14226,10 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>예제: 이미지에서 잡음을 제거하는 시스템<ul>
+<h3 id="&#50696;&#51228;:-&#51060;&#48120;&#51648;&#50640;&#49436;-&#51105;&#51020;&#51012;-&#51228;&#44144;&#54616;&#45716;-&#49884;&#49828;&#53596;">&#50696;&#51228;: &#51060;&#48120;&#51648;&#50640;&#49436; &#51105;&#51020;&#51012; &#51228;&#44144;&#54616;&#45716; &#49884;&#49828;&#53596;<a class="anchor-link" href="#&#50696;&#51228;:-&#51060;&#48120;&#51648;&#50640;&#49436;-&#51105;&#51020;&#51012;-&#51228;&#44144;&#54616;&#45716;-&#49884;&#49828;&#53596;">&#182;</a></h3><ul>
 <li>잡음이 많은 숫자 이미지를 입력으로 받고, 깨끗한 숫자 이미지를 MNIST 이미지처럼 픽셀의 강도를 담은 배열로 출력</li>
 <li>아래 왼쪽: 잡음 포함된 사진</li>
 <li>아래 오른쪽: 깨끗한 타깃 이미지</li>
-</ul>
-</li>
 </ul>
 
 </div>
@@ -14155,16 +14247,41 @@ $$\text{FPR} = \frac{FP}{FP+TN}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>다중 레이블: 각각의 픽셀이 레이블 역할 수행</li>
-<li>다중 클래스: 레리블이 0부터 255까지 픽셀 강도를 가짐.</li>
-<li>분류기를 훈련시켜 잡음이 섞인 입력 이미지를 깨끗한 타깃 이미지로 만들어 보기 <ul>
-<li>아래 사진: 분류기가 만들어낸 이미지</li>
-</ul>
-</li>
 </ul>
 
 </div>
 </div>
 </div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>다중 클래스: 레이블이 0부터 255까지 픽셀 강도를 가짐.</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>분류기를 훈련시켜 잡음이 섞인 입력 이미지를 깨끗한 타깃 이미지로 만들어 보기 </li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>아래 사진: 분류기가 만들어낸 이미지</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
