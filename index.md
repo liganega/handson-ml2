@@ -20,7 +20,10 @@
     [[pdf]](./slides/handson-ml2-04-slides.pdf)
 - 5장 서포트 벡터 머신 &nbsp;
     [[html]](./slides/handson-ml2-05.slides.html)
+    [[pdf]](./slides/handson-ml2-05-slides.pdf)
 - 6장 결정트리 &nbsp;
+    [[html]](./slides/handson-ml2-06.slides.html)
+    [[pdf]](./slides/handson-ml2-06-slides.pdf)
 - 7장 앙상블 학습과 랜덤 포레스트 &nbsp;
 - 8장 차원 축소 &nbsp;
 - ...
