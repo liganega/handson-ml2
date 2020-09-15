@@ -13869,33 +13869,76 @@ $$</p>
 <h3 id="&#49324;&#51060;&#53431;&#47088;--DecisionTreeClassifier-&#44508;&#51228;&#54616;&#44592;">&#49324;&#51060;&#53431;&#47088;  <code>DecisionTreeClassifier</code> &#44508;&#51228;&#54616;&#44592;<a class="anchor-link" href="#&#49324;&#51060;&#53431;&#47088;--DecisionTreeClassifier-&#44508;&#51228;&#54616;&#44592;">&#182;</a></h3>
 </div>
 </div>
-</div></section></section><section><section>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li><code>max_depth</code>: 의사결정나무의 최대 높이 제한</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><code>min_samples_split</code>: 마디를 분할하기 위해 필요한 최소 샘플 수</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li><code>min_samples_leaf</code>:나뭇잎에 포함되어야 하는 최소 샘플 수</li>
-<li><code>min_weight_fraction_leaf</code>: 샘플 별로 가중치가 있는 경우 가중치의 전체 합에서 해당 나뭇잎에 포함된 샘플의 가중치의 합이 차지하는 비율<ul>
-<li>가중치가 설정되지 않았다면 모두 동일한 가중치를 가졌다고 가정하며, 
-  따라서 <code>min_samples_leaf</code>와 동일한 역할 수행</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>min_weight_fraction_leaf</code>: <ul>
+<li>샘플 별로 가중치가 설정된 경우: 가중치의 전체 합에서 해당 나뭇잎에 포함된 샘플의 가중치의 합이 차지하는 비율</li>
+<li>샘플 별로 가중치가 없는 경우: <code>min_samples_leaf</code>와 동일한 역할 수행</li>
 </ul>
 </li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li><code>max_leaf_nodes</code>: 허용된 나뭇잎의 최대 개수</li>
-<li><p><code>max_features</code>: 각 마디에서 분할 평가에 사용될 수 있는 최대 특성 수</p>
-</li>
-<li><p>규제를 높이는 방법</p>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
+<li><code>max_features</code>: 각 마디에서 분할 평가에 사용될 수 있는 최대 특성 수</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>규제를 높이는 방법<ul>
 <li><code>min_</code> 접두사 사용 규제: 값을 키울 것</li>
 <li><code>max_</code> 접두사 사용 규제: 값을 감소시킬 것</li>
 </ul>
@@ -13904,7 +13947,7 @@ $$</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
