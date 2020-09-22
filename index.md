@@ -26,8 +26,10 @@
     [[pdf]](./slides/handson-ml2-06-slides.pdf)
 - 7장 앙상블 학습과 랜덤포레스트 &nbsp;
     [[html]](./slides/handson-ml2-07.slides.html)
+    [[pdf]](./slides/handson-ml2-07-slides.pdf)
 - 8장 차원축소 &nbsp;
     [[html]](./slides/handson-ml2-08.slides.html)
+    [[pdf]](./slides/handson-ml2-08-slides.pdf)
 - ...
 
 *주의: HTML을 이용하여 슬라이드를 사용할 경우 전진과 후진을 `space`와 `shift+space` 키를 활용할 것.*
