@@ -15250,8 +15250,9 @@ a.anchor-link {
 <ul>
 <li>군집수가 어느 정도일까를 나타내는 지수</li>
 <li><code>weight_concentration_prior</code> 하이퍼파라미터<ul>
-<li>큰 값일 수록 군집수가 클 것이다라는 사전 믿음을 나타냄.</li>
-<li>값의 크기에 따라 완전히 다른 모델 학습</li>
+<li><code>n_components</code>에 설정된 군집수에 대한 규제로 사용됨.</li>
+<li>작은 값이면 특정 군집의 가중치를 0에 가깝게 만들어 군집수를 줄이도록 함.</li>
+<li>즉, 큰 값일 수록 <code>n_components</code>에 설정된 군집수가 유지되도록 함.</li>
 </ul>
 </li>
 </ul>
