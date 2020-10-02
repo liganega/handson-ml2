@@ -5,6 +5,10 @@
 
 <div align="center"><img src="https://www.hanbit.co.kr/data/books/B7033438574_l.jpg" title="book-kr" width="200"></div>
 
+## 강의 슬라이드
+
+* 참조: [핸즈온 머신러닝(2판) 강의노트](http://formal.hknu.ac.kr/handson-ml2/)
+
 ## 온라인 학습
 
 **주의**: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.

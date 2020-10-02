@@ -39,14 +39,14 @@
 
 ### 주피터 노트북 학습
 
-#### 온라인 학습
+#### 온라인
 
 추천: [구글 코랩 활용 ](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/)
 <a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 *주의: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.*
 
-#### 오프라인 학습
+#### 오프라인
 
 추천 활용법: [GitHub:handson-ml2](https://github.com/liganega/handson-ml2)를 복제한 후에 도커 활용.
 도커 이미지는 아래 방법으로 구할 수 있음:
