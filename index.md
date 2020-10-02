@@ -41,7 +41,7 @@
 
 #### 온라인 학습
 
-추천 활용법: [구글 코랩](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/)
+추천: [구글 코랩 활용](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/)
 <a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 *주의: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.*
