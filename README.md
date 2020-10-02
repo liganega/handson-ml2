@@ -5,49 +5,12 @@
 
 <div align="center"><img src="https://www.hanbit.co.kr/data/books/B7033438574_l.jpg" title="book-kr" width="200"></div>
 
-
-## 목차
-
-1. 한눈에 보는 머신러닝 
-    [[ipynb]](./notebooks/01_the_machine_learning_landscape.ipynb) 
-    <img src="notebooks/images/baustelle.png" width="20"/>
-    [[slide]](./slides/handson-ml2-slide-01.pdf)
-2. 머신러닝 프로젝트 처음부터 끝까지 
-    [[ipynb]](./notebooks/02_end_to_end_machine_learning_project.ipynb)
-    [[slide]](./slides/handson-ml2-slide-02.pdf)
-3. 분류
-    [[ipynb]](./notebooks/03_classification.ipynb)
-    [[slide]](./slides/handson-ml2-slide-03.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>    
-4. 모델 훈련
-    [[ipynb]](./notebooks/04_training_linear_models.ipynb)
-    [[slide]](./slides/handson-ml2-slide-04.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>    
-5. 서포트 벡터 머신
-    [[ipynb]](./notebooks/05_support_vector_machines.ipynb)
-    [[slide]](./slides/handson-ml2-slide-05.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>    
-6. 의사결정나무
-    [[ipynb]](./notebooks/06_decision_trees.ipynb)
-    [[slide]](./slides/handson-ml2-slide-06.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>    
-7. 앙상블 학습과 랜덤 포레스트
-    [[ipynb]](./notebooks/07_ensemble_learning_and_random_forests.ipynb)
-    [[slide]](./slides/handson-ml2-slide-07.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>    
-8. 차원축소
-    [[ipynb]](./notebooks/08_dimensionality_reduction.ipynb)
-    [[slide]](./slides/handson-ml2-slide-08.ipynb)
-    <img src="notebooks/images/baustelle.png" width="20"/>    
-1. ...
-
-
 ## 온라인 학습
 
 **주의**: 온라인 상에서 일한 내용은 저장되지 않음. 먼저 자신의 계정으로 사본을 만든 후에 작업할 것.
 
 * **추천**: [구글 코랩](https://colab.research.google.com/github/liganega/handson-ml2/blob/master/)
-<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="30"/></a>
+<a href="https://colab.research.google.com/github/liganega/handson-ml2/blob/master/"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 * Binder: 차후 지원 예정
 
