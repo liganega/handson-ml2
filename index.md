@@ -2,7 +2,7 @@
 
 #### 감사의 글
 
-자료를 공개한 저자에게 깊은 감사를 드립니다(The work provided by Aur&eacute;lien G&eacute;ron is deeply appreciated). 또한 강의준비에 필요한 자료는 한빛미디어의 많은 도움을 받았음을 밝히며, 이에 대해 진심어린 감사함을 전합니다.
+자료를 공개한 저자에게 깊은 감사를 드립니다(The work provided by Aur&eacute;lien G&eacute;ron is deeply appreciated). 또한 강의준비에 필요한 자료는 한빛미디어의 많은 도움을 받았음을 밝히며, 이에 대해 진심어린 감사를 전합니다.
 
 ### 슬라이드 목차
 
