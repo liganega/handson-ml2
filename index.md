@@ -18,7 +18,7 @@
 - 4장 모델 훈련 &nbsp;
     [[html]](./slides/handson-ml2-04.slides.html)
     [[pdf]](./slides/handson-ml2-04-slides.pdf)
-- 5장 서포트벡터머신 &nbsp;
+- 5장 서포트벡터머신 &nbsp;  
     [[html]](./slides/handson-ml2-05.slides.html)
     [[pdf]](./slides/handson-ml2-05-slides.pdf)
 - 6장 의사결정나무 &nbsp;
