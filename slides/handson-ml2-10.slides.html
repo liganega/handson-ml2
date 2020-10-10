@@ -13741,7 +13741,7 @@ h_{\mathbf{w},\mathbf{b}}(\mathbf X) = \phi({\mathbf X}{\mathbf W} + {\mathbf b}
 <div class="text_cell_render border-box-sizing rendered_html">
 $$
 w_{i, j}^{(\text{next step})} = 
-w_{i, j} + \eta\, (y_j - \hat y_j)\, x_j
+w_{i, j} + \eta\, (y_j - \hat y_j)\, x_i
 $$
 </div>
 </div>
@@ -13751,7 +13751,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 $$
 w_{i, j}^{(\text{next step})} = 
-w_{i, j} + \eta\, (y_j - \hat y_j)\, x_j
+w_{i, j} + \eta\, (y_j - \hat y_j)\, x_i
 $$
 </div>
 </div>
@@ -14582,7 +14582,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#52992;&#46972;&#49828;-&#49884;&#53248;&#49500;-API-&#54876;&#50857;:-&#48516;&#47448;">&#52992;&#46972;&#49828; &#49884;&#53248;&#49500; API &#54876;&#50857;: &#48516;&#47448;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-&#49884;&#53248;&#49500;-API-&#54876;&#50857;:-&#48516;&#47448;">&#182;</a></h3>
+<h3 id="&#52992;&#46972;&#49828;-Sequential-&#53364;&#47000;&#49828;-&#54876;&#50857;:-&#48516;&#47448;">&#52992;&#46972;&#49828; Sequential &#53364;&#47000;&#49828; &#54876;&#50857;: &#48516;&#47448;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-Sequential-&#53364;&#47000;&#49828;-&#54876;&#50857;:-&#48516;&#47448;">&#182;</a></h3>
 </div>
 </div>
 </div></section></section><section><section>
@@ -14625,6 +14625,7 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
+<li><code>Sequential</code> 클래스 내에 층을 쌓아 순차적 학습 지원</li>
 <li>은닉층: 2개</li>
 </ul>
 
@@ -14842,7 +14843,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#52992;&#46972;&#49828;-&#49884;&#53248;&#49500;-API-&#54876;&#50857;:-&#54924;&#44480;">&#52992;&#46972;&#49828; &#49884;&#53248;&#49500; API &#54876;&#50857;: &#54924;&#44480;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-&#49884;&#53248;&#49500;-API-&#54876;&#50857;:-&#54924;&#44480;">&#182;</a></h3>
+<h3 id="&#52992;&#46972;&#49828;-Sequential-&#53364;&#47000;&#49828;-&#54876;&#50857;:-&#54924;&#44480;">&#52992;&#46972;&#49828; Sequential &#53364;&#47000;&#49828; &#54876;&#50857;: &#54924;&#44480;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-Sequential-&#53364;&#47000;&#49828;-&#54876;&#50857;:-&#54924;&#44480;">&#182;</a></h3>
 </div>
 </div>
 </div></section></section><section><section>
@@ -14857,7 +14858,7 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>시퀀셜 API를 이용한 회귀용 MLP 구축은 분류용과 기본적으로 동일.</li>
+<li><code>Sequential</code> 클래스를 이용한 회귀용 MLP 구축은 분류용과 기본적으로 동일.</li>
 </ul>
 
 </div>
@@ -14869,7 +14870,7 @@ $$
 <ul>
 <li>차이점:<ul>
 <li>출력층에 활성화함수 사용하지 않는 하나의 뉴런만 사용.<ul>
-<li>일반적으로는 예측값으 수 만큼 출력뉴런 사용</li>
+<li>일반적으로는 예측값의 수 만큼 출력뉴런 사용</li>
 </ul>
 </li>
 <li>손실함수: 평균제곱오차(MSE)</li>
@@ -14949,7 +14950,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#52992;&#46972;&#49828;-&#49884;&#53248;&#49500;-API&#51032;-&#51109;&#45800;&#51216;">&#52992;&#46972;&#49828; &#49884;&#53248;&#49500; API&#51032; &#51109;&#45800;&#51216;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-&#49884;&#53248;&#49500;-API&#51032;-&#51109;&#45800;&#51216;">&#182;</a></h3>
+<h3 id="&#52992;&#46972;&#49828;-Sequential-&#53364;&#47000;&#49828;-&#54876;&#50857;&#51032;-&#51109;&#45800;&#51216;">&#52992;&#46972;&#49828; Sequential &#53364;&#47000;&#49828; &#54876;&#50857;&#51032; &#51109;&#45800;&#51216;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-Sequential-&#53364;&#47000;&#49828;-&#54876;&#50857;&#51032;-&#51109;&#45800;&#51216;">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14967,7 +14968,7 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>입출력이 여러 개 이거나 더 복잡한 네트워크를 구성하기 어려움.</li>
+<li>입출력이 여러 개이거나 더 복잡한 네트워크를 구성하기 어려움.</li>
 </ul>
 
 </div>
@@ -14977,12 +14978,1241 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>시퀀셜 API 대신 <strong>함수형</strong> API, <strong>서브클래싱(subclassing)</strong> API 등을 사용하여 보다 복잡하며, 보다 강력한 딥러닝 모델 구축 가능.</li>
+<li><code>Sequential</code> 클래스 대신에 <strong>함수형</strong> API, <strong>하위클래스(subclassing)</strong> API 등을 사용하여 보다 복잡하며, 보다 강력한 딥러닝 모델 구축 가능.</li>
 </ul>
 
 </div>
 </div>
-</div></div></section></section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#52992;&#46972;&#49828;-&#54632;&#49688;&#54805;-API-&#54876;&#50857;">&#52992;&#46972;&#49828; &#54632;&#49688;&#54805; API &#54876;&#50857;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-&#54632;&#49688;&#54805;-API-&#54876;&#50857;">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>모든 레이블을 순차적으로 처리하는 것 대신 다양한 신경망 구축을 위해 함수형 API 활용</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>예제: 와이드&amp;딥(Wide &amp; Deep) 신경망. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/ch10/homl10-17.png" width="700"/></p>
+<p>&lt;그림 출처: <a href="https://arxiv.org/pdf/1606.07792.pdf">Heng-Tze Cheng et al., "Wide &amp; Deep Learning for Recommender Systems"</a>&gt;</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#50752;&#51060;&#46300;&amp;&#46373;-&#49888;&#44221;&#47581;:-&#54876;&#50857;-1">&#50752;&#51060;&#46300;&amp;&#46373; &#49888;&#44221;&#47581;: &#54876;&#50857; 1<a class="anchor-link" href="#&#50752;&#51060;&#46300;&amp;&#46373;-&#49888;&#44221;&#47581;:-&#54876;&#50857;-1">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>깊게 쌓은 층을 사용한 복잡한 패턴과 짧은 경로를 사용한 간단한 규칙 모두 학습가능한 모델</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/ch10/homl10-18.png" width="400"/></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>예제: 캘리포니아주 주택가격 데이터셋 활용</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>input_</code>: <code>Input</code> 객체<ul>
+<li><code>hideen1</code>을 통해 <code>hidden2</code> 로 전달됨</li>
+<li>반면에 <code>concat</code>를 통해 <code>hidden2</code>의 결과와 함께 <code>output</code>으로 직접 전달되기도 함.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">input_</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+<span class="n">hidden1</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)(</span><span class="n">input_</span><span class="p">)</span>
+<span class="n">hidden2</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)(</span><span class="n">hidden1</span><span class="p">)</span>
+<span class="n">concat</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">input_</span><span class="p">,</span> <span class="n">hidden2</span><span class="p">])</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="n">concat</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">input_</span><span class="p">],</span> <span class="n">outputs</span><span class="o">=</span><span class="p">[</span><span class="n">output</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#50752;&#51060;&#46300;&amp;&#46373;-&#49888;&#44221;&#47581;:-&#54876;&#50857;-2">&#50752;&#51060;&#46300;&amp;&#46373; &#49888;&#44221;&#47581;: &#54876;&#50857; 2<a class="anchor-link" href="#&#50752;&#51060;&#46300;&amp;&#46373;-&#49888;&#44221;&#47581;:-&#54876;&#50857;-2">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>다중 입력 사용<ul>
+<li>특성을 나누어 짧 경로와 깊은 경로에 (중복을 허용하여) 특성을 나누어 보낼 수도 있음. </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/ch10/homl10-19.png" width="300"/></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>input_A</code>: 5개의 특성 입력받을 수 있음</li>
+<li><code>input_B</code>: 6개의 특성 입력받을 수 있음</li>
+<li>입력 뉴런마다 입력값 지정하여 학습해야 함. <ul>
+<li><code>evaluate()</code>, <code>preict()</code> 메서드를 호출할 때도 동일</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">input_A</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;wide_input&quot;</span><span class="p">)</span>
+<span class="n">input_B</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;deep_input&quot;</span><span class="p">)</span>
+<span class="n">hidden1</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)(</span><span class="n">input_B</span><span class="p">)</span>
+<span class="n">hidden2</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)(</span><span class="n">hidden1</span><span class="p">)</span>
+<span class="n">concat</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">input_A</span><span class="p">,</span> <span class="n">hidden2</span><span class="p">])</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;output&quot;</span><span class="p">)(</span><span class="n">concat</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">input_A</span><span class="p">,</span> <span class="n">input_B</span><span class="p">],</span> <span class="n">outputs</span><span class="o">=</span><span class="p">[</span><span class="n">output</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>input_A</code> 입력값: 0-4번 인덱스 특성</li>
+<li><code>input_B</code> 입력값: 2-7번 인덱스 특성</li>
+<li>중복: 2-4번 인덱스 특성</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s2">&quot;mse&quot;</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">))</span>
+
+<span class="n">X_train_A</span><span class="p">,</span> <span class="n">X_train_B</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">5</span><span class="p">],</span> <span class="n">X_train</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">:]</span>
+<span class="n">X_valid_A</span><span class="p">,</span> <span class="n">X_valid_B</span> <span class="o">=</span> <span class="n">X_valid</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">5</span><span class="p">],</span> <span class="n">X_valid</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">:]</span>
+<span class="n">X_test_A</span><span class="p">,</span> <span class="n">X_test_B</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">5</span><span class="p">],</span> <span class="n">X_test</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">:]</span>
+<span class="n">X_new_A</span><span class="p">,</span> <span class="n">X_new_B</span> <span class="o">=</span> <span class="n">X_test_A</span><span class="p">[:</span><span class="mi">3</span><span class="p">],</span> <span class="n">X_test_B</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">((</span><span class="n">X_train_A</span><span class="p">,</span> <span class="n">X_train_B</span><span class="p">),</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">((</span><span class="n">X_valid_A</span><span class="p">,</span> <span class="n">X_valid_B</span><span class="p">),</span> <span class="n">y_valid</span><span class="p">))</span>
+<span class="n">mse_test</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">((</span><span class="n">X_test_A</span><span class="p">,</span> <span class="n">X_test_B</span><span class="p">),</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">((</span><span class="n">X_new_A</span><span class="p">,</span> <span class="n">X_new_B</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#50752;&#51060;&#46300;&amp;&#46373;-&#49888;&#44221;&#47581;:-&#54876;&#50857;-3">&#50752;&#51060;&#46300;&amp;&#46373; &#49888;&#44221;&#47581;: &#54876;&#50857; 3<a class="anchor-link" href="#&#50752;&#51060;&#46300;&amp;&#46373;-&#49888;&#44221;&#47581;:-&#54876;&#50857;-3">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>다중 출력이 필요한 경우 사용</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/ch10/homl10-20.png" width="400"/></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>output</code>: 주 출력</li>
+<li><code>aux_output</code>: 보조 출력</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">input_A</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;wide_input&quot;</span><span class="p">)</span>
+<span class="n">input_B</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;deep_input&quot;</span><span class="p">)</span>
+<span class="n">hidden1</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)(</span><span class="n">input_B</span><span class="p">)</span>
+<span class="n">hidden2</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)(</span><span class="n">hidden1</span><span class="p">)</span>
+<span class="n">concat</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">input_A</span><span class="p">,</span> <span class="n">hidden2</span><span class="p">])</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;main_output&quot;</span><span class="p">)(</span><span class="n">concat</span><span class="p">)</span>
+<span class="n">aux_output</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;aux_output&quot;</span><span class="p">)(</span><span class="n">hidden2</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">input_A</span><span class="p">,</span> <span class="n">input_B</span><span class="p">],</span>
+                           <span class="n">outputs</span><span class="o">=</span><span class="p">[</span><span class="n">output</span><span class="p">,</span> <span class="n">aux_output</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>컴파일할 때 각 출력 뉴런마다 손실함수 지정해야 함</li>
+<li>출력 별로 <strong>손실가중치</strong> 를 지정하여 출력별 중요도 지정 가능</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;mse&quot;</span><span class="p">,</span> <span class="s2">&quot;mse&quot;</span><span class="p">],</span> <span class="n">loss_weights</span><span class="o">=</span><span class="p">[</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">],</span>
+              <span class="n">optimizer</span><span class="o">=</span><span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>모델 훈련 시 출력별로 레이블 제공</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">([</span><span class="n">X_train_A</span><span class="p">,</span> <span class="n">X_train_B</span><span class="p">],</span> <span class="p">[</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">],</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">([</span><span class="n">X_valid_A</span><span class="p">,</span> <span class="n">X_valid_B</span><span class="p">],</span> <span class="p">[</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">]))</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#46041;&#51201;-&#47784;&#45944;-&#49373;&#49457;:-&#54616;&#50948;&#53364;&#47000;&#49828;(subclassing)-API-&#54876;&#50857;">&#46041;&#51201; &#47784;&#45944; &#49373;&#49457;: &#54616;&#50948;&#53364;&#47000;&#49828;(subclassing) API &#54876;&#50857;<a class="anchor-link" href="#&#46041;&#51201;-&#47784;&#45944;-&#49373;&#49457;:-&#54616;&#50948;&#53364;&#47000;&#49828;(subclassing)-API-&#54876;&#50857;">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>Sequential</code> 클래스와 함수형 API 방식을 사용한 모델은 모두 정적임.<ul>
+<li>한 번 선언되면 변경할 수 없는 모델 생성</li>
+<li>모델 저장, 복사, 공유 용이</li>
+<li>모델 구조 출력 및 모델 분석 용이</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>반복문, 조건문 등을 활용하여 동적 모델을 생성하고자 할 경우 명령형프로그래밍 방식 요구됨.</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>하위클래스 API을 활용하여 동적 모델 생성 가능</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54616;&#50948;&#53364;&#47000;&#49828;-API-&#54876;&#50857;-&#50696;&#51228;">&#54616;&#50948;&#53364;&#47000;&#49828; API &#54876;&#50857; &#50696;&#51228;<a class="anchor-link" href="#&#54616;&#50948;&#53364;&#47000;&#49828;-API-&#54876;&#50857;-&#50696;&#51228;">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>Model</code> 클래스 상속<ul>
+<li>초기설정 메서드(<code>__init__()</code>)를 이용하여 은닉층과 출력층 설정</li>
+<li><code>call()</code> 메서드를 이용하여 층을 동적으로 구성 가능<ul>
+<li>for 반복문, if 조건문, 텐서플로 저수준 연산 등을 임의로 활용 가능</li>
+</ul>
+</li>
+<li>참조: 12장</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">WideAndDeepModel</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hidden1</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="n">activation</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hidden2</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="n">activation</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_output</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">aux_output</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">):</span>
+        <span class="n">input_A</span><span class="p">,</span> <span class="n">input_B</span> <span class="o">=</span> <span class="n">inputs</span>
+        <span class="n">hidden1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hidden1</span><span class="p">(</span><span class="n">input_B</span><span class="p">)</span>
+        <span class="n">hidden2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hidden2</span><span class="p">(</span><span class="n">hidden1</span><span class="p">)</span>
+        <span class="n">concat</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">input_A</span><span class="p">,</span> <span class="n">hidden2</span><span class="p">])</span>
+        <span class="n">main_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_output</span><span class="p">(</span><span class="n">concat</span><span class="p">)</span>
+        <span class="n">aux_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">aux_output</span><span class="p">(</span><span class="n">hidden2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">main_output</span><span class="p">,</span> <span class="n">aux_output</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">WideAndDeepModel</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#45800;&#51216;">&#45800;&#51216;<a class="anchor-link" href="#&#45800;&#51216;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>모델 구조가 <code>call()</code> 메서드 안에 숨겨져 있어서, 케라스가 분석하기 어려움</li>
+<li>즉, 모델 저장 및 복사 불가능.</li>
+<li><code>summary()</code> 메서드 활용 제한됨: 층의 목록만 확인 가능하며, 층간의 연결정보 알 수 없음.</li>
+<li>케라스가 타입과 크기를 미리 확인할 수 없어 실수 발생 많아질 수 있음.</li>
+<li>높은 유연성이 필요하지 않다면 추천하지 않음.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#47784;&#45944;-&#51200;&#51109;&#44284;-&#48373;&#50896;">&#47784;&#45944; &#51200;&#51109;&#44284; &#48373;&#50896;<a class="anchor-link" href="#&#47784;&#45944;-&#51200;&#51109;&#44284;-&#48373;&#50896;">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Sequential 모델과 함수형 API 를 사용해서 훈련된 모델 저장은 매우 간단함.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span><span class="o">...</span><span class="p">])</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">([</span><span class="o">...</span><span class="p">])</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">([</span><span class="o">...</span><span class="p">])</span>
+<span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;my_keras_model.ht&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>저장된 모델을 복원하려면 <code>load_model()</code> 함수 활용</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="s2">&quot;my_keras_model.ht&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>주의사항<ul>
+<li>서브클래스 API 에서는 사용 불가</li>
+<li><code>save_weights()</code>, <code>load_weights()</code> 메서드를 활용하여 모델 파라미터만 저장/복원 가능</li>
+<li>나머지는 수동으로 처리. 예를 들어, <code>pickle</code> 모듈 활용.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#53084;&#48177;&#54632;&#49688;-&#54876;&#50857;">&#53084;&#48177;&#54632;&#49688; &#54876;&#50857;<a class="anchor-link" href="#&#53084;&#48177;&#54632;&#49688;-&#54876;&#50857;">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>훈련의 시작/끝/중간에 호출할 객체를 콜백함수를 이용하여 지정 가능</li>
+<li>지정된 객체가 호출되면서 각자의 역할 수행</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#50696;&#51228;:-ModelCheckpoint">&#50696;&#51228;: ModelCheckpoint<a class="anchor-link" href="#&#50696;&#51228;:-ModelCheckpoint">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>훈련 중에 일정 간격으로 모델의 체크포이트 저장</p>
+</li>
+<li><p>체크포인트: 텐서플로우에서 모델 파라미터를 저장하는 양식</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1"># 모델 생성 후 훈련하기</span>
+<span class="n">checkpoint_cb</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">ModelCheckpoint</span><span class="p">(</span><span class="s2">&quot;my_keras_model.hs&quot;</span><span class="p">)</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpoint_cb</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><code>save_best_only=True</code> 옵션 설정</p>
+<ul>
+<li>훈련 도중에 검증세트를 사용할 경우 최상의 검증 세트 파라미터 저장 가능</li>
+</ul>
+</li>
+<li><p>훈련 종료 후 저장된 최적 모델 복원에 사용</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">checkpoint_cb</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">ModelCheckpoint</span><span class="p">(</span><span class="s2">&quot;my_keras_model.hs&quot;</span><span class="p">,</span>
+                                                <span class="n">save_best_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> 
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">),</span>
+                    <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpoint_cb</span><span class="p">])</span>
+
+<span class="c1"># 최적 모델 복원</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="s2">&quot;my_keras_model.h5&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#50696;&#51228;:-EarlyStopping">&#50696;&#51228;: EarlyStopping<a class="anchor-link" href="#&#50696;&#51228;:-EarlyStopping">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>조기종료 구현 용도로 활용</li>
+<li><code>patience=10</code>: 일정 에포크(예를 들어, 10 에포크) 동안 검증세트에 대한 점수가 향상되지 않으면 자동 종료.<ul>
+<li>에포크 수: 매우 크게 지정해도 됨.</li>
+</ul>
+</li>
+<li><code>restore_best_weights=True</code>: 최상의 모델 복원 기능 설정. 훈련이 끝난 후 최적 가중치 바로 복원.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">early_stopping_cb</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">EralyStopping</span><span class="p">(</span><span class="n">patience</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                                                  <span class="n">restore_best_weights</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> 
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">),</span>
+                    <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpoint_cb</span><span class="p">,</span> <span class="n">early_stopping_cb</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#45796;&#50577;&#54620;-&#53084;&#48177;&#54632;&#49688;">&#45796;&#50577;&#54620; &#53084;&#48177;&#54632;&#49688;<a class="anchor-link" href="#&#45796;&#50577;&#54620;-&#53084;&#48177;&#54632;&#49688;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>keras.callbacks 패키지가 다양한 콜백함수 제공</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#49324;&#50857;&#51088;&#51221;&#51032;-&#53084;&#48177;&#54632;&#49688;">&#49324;&#50857;&#51088;&#51221;&#51032; &#53084;&#48177;&#54632;&#49688;<a class="anchor-link" href="#&#49324;&#50857;&#51088;&#51221;&#51032;-&#53084;&#48177;&#54632;&#49688;">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>keras.callbacks.Callback 클래스 상속</li>
+<li>상속 과정에서 이미 선언된 콜백함수 메서드 중에서 필요한 메서드를 재정의 하면 됨.</li>
+<li>예제: 아래 클래스는 에포크가 끝날 때마다 검증손실과 훈련손실의 비율을 계산하고자 할 경우에 필요한 콜백함수 지정</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PrintValTrainRatioCallback</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">Callback</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">on_epoch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">epoch</span><span class="p">,</span> <span class="n">logs</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">val/train: </span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">logs</span><span class="p">[</span><span class="s2">&quot;val_loss&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">logs</span><span class="p">[</span><span class="s2">&quot;loss&quot;</span><span class="p">]))</span>
+
+<span class="n">val_train_ratio_cb</span> <span class="o">=</span> <span class="n">PrintValTrainRatioCallback</span><span class="p">()</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">),</span>
+                    <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">val_train_ratio_cb</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#54984;&#47144;-&#45800;&#44228;&#50640;&#49436;-&#49324;&#50857;&#46112;-&#49688;-&#51080;&#45716;-&#53084;&#48177;-&#54632;&#49688;:-(fit()-&#47700;&#49436;&#46300;&#50640;&#49436;-&#54876;&#50857;&#46120;)">&#54984;&#47144; &#45800;&#44228;&#50640;&#49436; &#49324;&#50857;&#46112; &#49688; &#51080;&#45716; &#53084;&#48177; &#54632;&#49688;: (<code>fit()</code> &#47700;&#49436;&#46300;&#50640;&#49436; &#54876;&#50857;&#46120;)<a class="anchor-link" href="#&#54984;&#47144;-&#45800;&#44228;&#50640;&#49436;-&#49324;&#50857;&#46112;-&#49688;-&#51080;&#45716;-&#53084;&#48177;-&#54632;&#49688;:-(fit()-&#47700;&#49436;&#46300;&#50640;&#49436;-&#54876;&#50857;&#46120;)">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>on_train_begin()</li>
+<li>on_train_end()</li>
+<li>on_epoch_begin()</li>
+<li>on_epoch_end()</li>
+<li>on_batch_begin()</li>
+<li>on_batch_end()</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#54217;&#44032;(&#44160;&#51613;)-&#45800;&#44228;&#50640;&#49436;-&#49324;&#50857;&#46112;-&#49688;-&#51080;&#45716;-&#53084;&#48177;-&#54632;&#49688;:-evaluate()--&#47700;&#49436;&#46300;&#50640;&#49436;-&#54876;&#50857;&#46120;.">&#54217;&#44032;(&#44160;&#51613;) &#45800;&#44228;&#50640;&#49436; &#49324;&#50857;&#46112; &#49688; &#51080;&#45716; &#53084;&#48177; &#54632;&#49688;: <code>evaluate()</code>  &#47700;&#49436;&#46300;&#50640;&#49436; &#54876;&#50857;&#46120;.<a class="anchor-link" href="#&#54217;&#44032;(&#44160;&#51613;)-&#45800;&#44228;&#50640;&#49436;-&#49324;&#50857;&#46112;-&#49688;-&#51080;&#45716;-&#53084;&#48177;-&#54632;&#49688;:-evaluate()--&#47700;&#49436;&#46300;&#50640;&#49436;-&#54876;&#50857;&#46120;.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>on_test_begin()</li>
+<li>on_test_end()</li>
+<li>on_test_batch_begin()</li>
+<li>on_test_batch_end()</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#50696;&#52769;-&#45800;&#44228;&#50640;&#49436;-&#49324;&#50857;&#46112;-&#49688;-&#51080;&#45716;-&#53084;&#48177;-&#54632;&#49688;:-predict()--&#47700;&#49436;&#46300;&#50640;&#49436;-&#54876;&#50857;&#46120;.">&#50696;&#52769; &#45800;&#44228;&#50640;&#49436; &#49324;&#50857;&#46112; &#49688; &#51080;&#45716; &#53084;&#48177; &#54632;&#49688;: <code>predict()</code>  &#47700;&#49436;&#46300;&#50640;&#49436; &#54876;&#50857;&#46120;.<a class="anchor-link" href="#&#50696;&#52769;-&#45800;&#44228;&#50640;&#49436;-&#49324;&#50857;&#46112;-&#49688;-&#51080;&#45716;-&#53084;&#48177;-&#54632;&#49688;:-predict()--&#47700;&#49436;&#46300;&#50640;&#49436;-&#54876;&#50857;&#46120;.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>on_predict_begin()</li>
+<li>on_predict_end()</li>
+<li>on_predict_batch_begin()</li>
+<li>on_predict_batch_end()</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#53584;&#49436;&#48372;&#46300;-&#54876;&#50857;">&#53584;&#49436;&#48372;&#46300; &#54876;&#50857;<a class="anchor-link" href="#&#53584;&#49436;&#48372;&#46300;-&#54876;&#50857;">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#53584;&#49436;&#48372;&#46300;">&#53584;&#49436;&#48372;&#46300;<a class="anchor-link" href="#&#53584;&#49436;&#48372;&#46300;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>대화식 시각화 도구</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#44592;&#45733;">&#44592;&#45733;<a class="anchor-link" href="#&#44592;&#45733;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>훈련하는 동안의 학습곡선,</li>
+<li>여러 실행 간의 학습곡선 비교,</li>
+<li>계산그래프 시각화,</li>
+<li>훈련통계 분석,</li>
+<li>3D에 사영된 복잡한 다차원 이미지 시각화,</li>
+<li>자동 군집화, 등등</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#49324;&#50857;&#48169;&#49885;">&#49324;&#50857;&#48169;&#49885;<a class="anchor-link" href="#&#49324;&#50857;&#48169;&#49885;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>콜백 기능을 이용하여 시각화에 필요한 데이터 저장</li>
+<li>이벤트 파일: 텐서보드에 활용되는 이진 로그파일</li>
+<li>로그 디렉토리: 이벤트 파일이 저장되는 디렉토리</li>
+<li>텐서보드 서버: 로그 디렉토리에 저장된 이벤트 파일을 실시간을로 확인하여 변경사항을 업데이트하는 서버</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#47196;&#44536;-&#46356;&#47113;&#53664;&#47532;-&#44396;&#51312;">&#47196;&#44536; &#46356;&#47113;&#53664;&#47532; &#44396;&#51312;<a class="anchor-link" href="#&#47196;&#44536;-&#46356;&#47113;&#53664;&#47532;-&#44396;&#51312;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>루트 로그 디렉토리<ul>
+<li>모든 로그 디렉토리의 상위 디렉토리</li>
+<li>텐서보드 서버가 실시간으로 감시하는 디렉토리</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>하위 로그 디렉토리<ul>
+<li>훈련할 때마다 새로운 하위 로그 디렉토리를 생성하여 그곳에 이벤트 파일 저장</li>
+<li>여러 번 실행한 훈련 결과를 시각화하고 비교 가능해짐.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/ch10/homl10-22.png" width="600"/></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#50696;&#51228;">&#50696;&#51228;<a class="anchor-link" href="#&#50696;&#51228;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>루트 로그 디렉토리 지정</li>
+<li><code>get-run_logdir()</code> 함수<ul>
+<li>훈련 실행할 때 사용될 하위 로그 디렉토리 생성</li>
+<li>현재 시간 활용하여 매번 새로운 디렉토리 이름 설정</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1"># 루트 로그 디렉토리 지정</span>
+<span class="n">root_logdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">curdir</span><span class="p">,</span> <span class="s2">&quot;my_logs&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_run_logdir</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">time</span>
+    <span class="n">run_id</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;run_%Y_%m_</span><span class="si">%d</span><span class="s2">-%H_%M_%S&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_logdir</span><span class="p">,</span> <span class="n">run_id</span><span class="p">)</span>
+
+<span class="n">run_logdir</span> <span class="o">=</span> <span class="n">get_run_logdir</span><span class="p">()</span>
+<span class="n">run_logdir</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>모델 구성과 컴파일</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1"># 텐서보드 콜백함수 지정</span>
+<span class="n">tensorboard_cb</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">TensorBoard</span><span class="p">(</span><span class="n">run_logdir</span><span class="p">)</span>
+
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+                    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">),</span>
+                    <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpoint_cb</span><span class="p">,</span> <span class="n">tensorboard_cb</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>텐서보드 실행 (명령 터미널에서 실행)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span>$ tensorboard --logdir<span class="o">=</span>./my_logs --port<span class="o">=</span><span class="m">6006</span>
+</pre></div>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>인터넷 브라우저에서 <code>http://localhost:6006</code> 열면 텐서보드 실행 확인 가능</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="images/ch10/homl10-21.png" width="500"/></p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#49888;&#44221;&#47581;-&#54616;&#51060;&#54140;&#54028;&#46972;&#48120;&#53552;-&#49464;&#48512;&#51312;&#51221;">&#49888;&#44221;&#47581; &#54616;&#51060;&#54140;&#54028;&#46972;&#48120;&#53552; &#49464;&#48512;&#51312;&#51221;<a class="anchor-link" href="#&#49888;&#44221;&#47581;-&#54616;&#51060;&#54140;&#54028;&#46972;&#48120;&#53552;-&#49464;&#48512;&#51312;&#51221;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>신경망은 조정해야할 하이퍼파라미터가 매우 많음. </li>
+<li>복잡한 네트워크 구조</li>
+<li>층과 뉴런의 수</li>
+<li>활성화 함수, 가중치 초기화 등등</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#44536;&#47532;&#46300;&#53456;&#49353;/&#47004;&#45924;&#53456;&#49353;-&#54876;&#50857;">&#44536;&#47532;&#46300;&#53456;&#49353;/&#47004;&#45924;&#53456;&#49353; &#54876;&#50857;<a class="anchor-link" href="#&#44536;&#47532;&#46300;&#53456;&#49353;/&#47004;&#45924;&#53456;&#49353;-&#54876;&#50857;">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>케라스 모델을 사이킷런의 추정기처럼 보여주어야 함.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>회귀 예제: <code>KerasRegressor</code> 클래스를 이용하여 케라스 모델을 사이킷런 모델처럼 작동하게 만들 수 있음.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>KerasRegressor</code> 클래스의 객체를 생성할 때 아래 <code>build_model()</code> 함수와 같이
+  케라스 모델을 생성하는 함수를 입력해 주어야 함.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#52992;&#46972;&#49828;-&#47784;&#45944;-&#49373;&#49457;&#54632;&#49688;-&#50696;&#51228;">&#52992;&#46972;&#49828; &#47784;&#45944; &#49373;&#49457;&#54632;&#49688; &#50696;&#51228;<a class="anchor-link" href="#&#52992;&#46972;&#49828;-&#47784;&#45944;-&#49373;&#49457;&#54632;&#49688;-&#50696;&#51228;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">build_model</span><span class="p">(</span><span class="n">n_hidden</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_neurons</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">3e-3</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">[</span><span class="mi">8</span><span class="p">]):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">()</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">InputLayer</span><span class="p">(</span><span class="n">input_shape</span><span class="o">=</span><span class="n">input_shape</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_hidden</span><span class="p">):</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">n_neurons</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">optimizer</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s2">&quot;mse&quot;</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">model</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="KerasRegressor-&#53364;&#47000;&#49828;-&#54876;&#50857;-&#50696;&#51228;">KerasRegressor &#53364;&#47000;&#49828; &#54876;&#50857; &#50696;&#51228;<a class="anchor-link" href="#KerasRegressor-&#53364;&#47000;&#49828;-&#54876;&#50857;-&#50696;&#51228;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">keras_reg</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">wrappers</span><span class="o">.</span><span class="n">scikit_learn</span><span class="o">.</span><span class="n">KerasRegressor</span><span class="p">(</span><span class="n">build_model</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#47004;&#45924;&#53456;&#49353;-&#54876;&#50857;-&#50696;&#51228;">&#47004;&#45924;&#53456;&#49353; &#54876;&#50857; &#50696;&#51228;<a class="anchor-link" href="#&#47004;&#45924;&#53456;&#49353;-&#54876;&#50857;-&#50696;&#51228;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="n">param_distribs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;n_hidden&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+    <span class="s2">&quot;n_neurons&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
+    <span class="s2">&quot;learning_rate&quot;</span><span class="p">:</span> <span class="n">reciprocal</span><span class="p">(</span><span class="mf">3e-4</span><span class="p">,</span> <span class="mf">3e-2</span><span class="p">),</span>
+<span class="p">}</span>
+
+<span class="n">rnd_search_cv</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">keras_reg</span><span class="p">,</span> <span class="n">param_distribs</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">rnd_search_cv</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+                  <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">),</span>
+                  <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">EarlyStopping</span><span class="p">(</span><span class="n">patience</span><span class="o">=</span><span class="mi">10</span><span class="p">)])</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#45908;-&#51339;&#51008;-&#44592;&#48277;">&#45908; &#51339;&#51008; &#44592;&#48277;<a class="anchor-link" href="#&#45908;-&#51339;&#51008;-&#44592;&#48277;">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>랜덤탐색 기법은 매우 오래 걸림.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>하이퍼파라미터 최적화에 사용할 수 있는 다양한 라이브러리 개발됨.<ul>
+<li>Hyperopt</li>
+<li>Hyperas, kopt, Talos</li>
+<li>Keras Tuner</li>
+<li>Scikit-Optimize(skopt)</li>
+<li>Spearmint</li>
+<li>Hyperband</li>
+<li>Sklearn-Deap</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>클라우드 서비스도 활용 가능<ul>
+<li>구글의 AutoML</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54616;&#51060;&#54140;&#54028;&#46972;&#47532;&#53552;-&#51312;&#51221;-&#44032;&#51060;&#46300;&#46972;&#51064;">&#54616;&#51060;&#54140;&#54028;&#46972;&#47532;&#53552; &#51312;&#51221; &#44032;&#51060;&#46300;&#46972;&#51064;<a class="anchor-link" href="#&#54616;&#51060;&#54140;&#54028;&#46972;&#47532;&#53552;-&#51312;&#51221;-&#44032;&#51060;&#46300;&#46972;&#51064;">&#182;</a></h3>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#51008;&#45769;&#52789;-&#44060;&#49688;">&#51008;&#45769;&#52789; &#44060;&#49688;<a class="anchor-link" href="#&#51008;&#45769;&#52789;-&#44060;&#49688;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>복잡한 문제 해결의 경우: 심층 신경망이 효율적임.</li>
+<li>과대적합이 발생할 때까지 은닉층 수를 늘려가며 훈련시킬 수 있음.</li>
+<li>수십, 수백층이 필요한 경우도 있음. 하지만 밀집연결이 사용되진 않음. (14장 참조)</li>
+<li>수십, 수백층의 신경망을 처음부터 훈련시키는 대신 훈련된 네트워크를 재사용하는 것이 일반적임.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#51008;&#45769;&#52789;&#51032;-&#45684;&#47088;-&#49688;">&#51008;&#45769;&#52789;&#51032; &#45684;&#47088; &#49688;<a class="anchor-link" href="#&#51008;&#45769;&#52789;&#51032;-&#45684;&#47088;-&#49688;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>일단 필요한 것보다 더 많은 층과 뉴런을 가진 모델로 시작</li>
+<li>과대적합되지 않도록 조기종료나 규제 기법 사용 추천</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#54617;&#49845;&#47456;">&#54617;&#49845;&#47456;<a class="anchor-link" href="#&#54617;&#49845;&#47456;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>$10^{-5}$ 에서 시작하여 $10$까지 조정해보며 실험</li>
+<li>변경 크기는 두 구간의 크기는 500으로 나눈 정도. <ul>
+<li>약, $\exp(\log(10^6)/500$ 정도씩 크게해줌.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#50741;&#54000;&#47560;&#51060;&#51200;">&#50741;&#54000;&#47560;&#51060;&#51200;<a class="anchor-link" href="#&#50741;&#54000;&#47560;&#51060;&#51200;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>고전적인 미니배치 경사하강법 보다 더 좋은 성능의 옵티마이저 사용 가능</li>
+<li>11장 참조</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#48176;&#52824;&#53356;&#44592;">&#48176;&#52824;&#53356;&#44592;<a class="anchor-link" href="#&#48176;&#52824;&#53356;&#44592;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>경우에 따라 다름.</li>
+<li>일반적으로 2-32.</li>
+<li>어떨 때는 8192까지 가능. </li>
+<li>훈련된 성능이 좋지 않을 경우 작은 배치크기 추천.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#54876;&#49457;&#54868;&#54632;&#49688;">&#54876;&#49457;&#54868;&#54632;&#49688;<a class="anchor-link" href="#&#54876;&#49457;&#54868;&#54632;&#49688;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>은닉층: ReLU 가 일반적.</li>
+<li>출력층: 모델에 따라 다름.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#48152;&#48373;&#54943;&#49688;(&#50640;&#54252;&#53356;)">&#48152;&#48373;&#54943;&#49688;(&#50640;&#54252;&#53356;)<a class="anchor-link" href="#&#48152;&#48373;&#54943;&#49688;(&#50640;&#54252;&#53356;)">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>조기종료 기법을 사용 추천</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54617;&#49845;&#47456;&#51032;-&#51032;&#51316;&#49457;">&#54617;&#49845;&#47456;&#51032; &#51032;&#51316;&#49457;<a class="anchor-link" href="#&#54617;&#49845;&#47456;&#51032;-&#51032;&#51316;&#49457;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>최적의 학습률은 다른 하이퍼파라미터에 의존적임.</li>
+<li>특히 배치크기에 영양 많이 받음.</li>
+<li>따라서 다른 하이퍼파라이머터를 조정한 경우, 학습률도 조정해야 함.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
