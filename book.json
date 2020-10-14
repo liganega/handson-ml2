@@ -1,4 +1,3 @@
 {
-		// mathjax support for latex
     "plugins": ["mathjax"]
 }
