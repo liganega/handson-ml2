@@ -44,7 +44,7 @@
 #### 글로로(Glorot) 초기화
 
 * 팬-인/팬-아웃
-    * fan-in(팬-인, \\(\textit{fan}_{\textrm{in}}\\)): 층에 들어오는 입력 수
+    * fan-in(팬-인, $$\textit{fan}_{\textrm{in}}$$): 층에 들어오는 입력 수
     * fan-out(팬-아웃, \\(\textit{fan}_{\textrm{out}}\\)): 층에서 나가는 출력 수
 
 $$
