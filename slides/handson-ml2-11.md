@@ -29,7 +29,9 @@
 <img src="images/ch11/homl11-01.png" width="400"/>
 
 * 2010년에 위 사실이 알려질 때까지 심층신경망은 사실상 방치되었음.
-    * 2016년 알파고와 이세돌 바둑대전이 가능해짐.
+* 하지만 이후 급속도로 발전하여 2016년 알파고와 이세돌 바둑대전까지 가능해짐.
+* 현재 데이터과학과 관련된 모든 분야에서 기존에 해결 불가능한 문제들을 해결하고 있음.
+* 하나의 연구분야가 아니라 컴퓨터 프로그래밍의 필수 기법으로 자리잡음.
 
 ### 초기화 방식 선택
 
@@ -44,8 +46,8 @@
 #### 글로로(Glorot) 초기화
 
 * 팬-인/팬-아웃
-    * fan-in(팬-인, $$\textit{fan}_{\textrm{in}}$$): 층에 들어오는 입력 수
-    * fan-out(팬-아웃, $$\textit{fan}_{\textrm{out}}$$): 층에서 나가는 출력 수
+    * fan-in(팬-인, \\(\textit{fan}_{\textrm{in}}\\)): 층에 들어오는 입력 수
+    * fan-out(팬-아웃, \\(\textit{fan}_{\textrm{out}}\\)): 층에서 나가는 출력 수
 
 $$
 \textit{fan}_{\textrm{avg}} = \frac{\textit{fan}_{\textrm{in}} + \textit{fan}_{\textrm{out}}}{2}
@@ -198,9 +200,7 @@ $$
 
 #### 심층신경망의 은닉층에 대한 활성화 함수 선택 가이드라인
 
-* 일반적으로
-
-    SELU > ELU > LeakyReLU 와 기타 변종들 > ReLU > 로지스틱
+* 일반적 우선순위: SELU > ELU > LeakyReLU 와 기타 변종들 > ReLU > 로지스틱
 
 * 신경망이 자기정규화(self-normlizing)하지 않은 경우: SELU 보다 ELU 선호
 
@@ -569,32 +569,73 @@ optimizer = keras.optimizers.Adamax(lr=0.001, beta_1=0.9, beta_2=0.999)
 | Nadam | &#42;&#42;&#42; | &#42;&#42; 또는 &#42;&#42;&#42; |
 | AdaMax | &#42;&#42;&#42; | &#42;&#42; 또는 &#42;&#42;&#42; |
 
+### 부록: 희소 모델 훈련 최적화 알고리즘
+
+* 아주 빠르게 실행할 모델이 필요하거나 메모리를 적게 요구하는 모델이 필요한 경우 희소(sparse) 모델 훈련 가능
+
+#### 해법 1
+
+* 옵티마이저에 $\ell_1$ 규젝 적용
+    * (4장) 라쏘 회귀의 경우처럼 옵티마이저가 가능한 한 많은 가중치를 0으로 만듦.
+
+#### 해법 2
+
+* 텐서플로우의 모델최적화 툴킷(TF-MOT) 사용 가능.
+    * 훈련과정 동안 반복적으로 연결가중치를 크기에 맞춰 제거하는 가지치기 API 제공.
+
 ## 학습률 스케줄링
 
 * 좋은 학습률이 매우 중요
 
 <img src="images/ch11/homl11-08.png" width="400"/>
 
-* 학습 스케줄링
-    * 큰 학습률로 시작해서 학습속도가 느려질 경우 학습률 작게 조정하는 기법
+### 정의
+
+* 모델 훈련과정동안 학습률을 조정하는 기법
+
+* 보통 높은 학습률로 시작해서 학습속도가 느려질 경우 학습률 작게 조정
+
+* 다양한 기법 소개됨.
+
+### 알려진 주요 기법
 
 * 거듭제곱 기반 스케줄링(power scheduling)
+
 * 지수 기반 스케줄링(exponential scheduling)
+
 * 구간별 고정 스케줄링(piecewise constant scheduling)
+
 * 성능 기반 스케줄링(performance scheduling)
+
 * 1사이클 스케줄링(1cycle scheduling)
     * 2018년 소개됨
 
-### 스케줄링 성능 비교
+#### 성능 비교
 
-* 2013년 논문 결과
-    * 모멘텀 최적화를 사용한 음성 인식용 심층신경망 훈련
-    * 성능 기반과 지수 기반 모두 좋지만 지수 기반 스케줄링 선호
-    * 튜닝 쉽고, 성능 좀 더 좋고, 구현 쉽기 때문.
+* 2013년 발표된 논문에서 소개
 
-* 하지만 1사이클 방식이 좀 더 성능 좋음.
+* 모멘텀 최적화를 사용한 음성 인식용 심층신경망 훈련에 다양한 학습률 스케줄링 기법 비교
+
+* 성능 기반과 지수 기반 모두 좋지만 지수 기반 스케줄링 선호
+
+* 튜닝 쉽고, 성능 좀 더 좋고, 구현 쉽기 때문.
+
+* (오렐리아 제롱에 따르면) 하지만 1사이클 방식이 좀 더 성능 좋음.
 
 ### 거듭제곱 기반 스케줄링(power scheduling)
+
+* 학습률을 스텝의 반복횟수 $t$에 대한 아래 함수로 선언
+
+$$
+\eta(t) = \frac{\eta_0}{(1 + \frac{t}{s})^c}
+$$
+
+* $t = k\cdot s$ 로 커지면 학습률이 $\frac{\eta_0}{k+1}$ 로 줄어듦.
+
+* 하이퍼파라미터
+    * $\eta_0$: 초기 학습률
+    * $c$: 거듭제곱수, 일반적으로 1로 지정
+    * $s$: 스텝 횟수
 
 * 옵티마이저 선언할 때 `decay` 옵션으로 지정
 
@@ -602,7 +643,19 @@ optimizer = keras.optimizers.Adamax(lr=0.001, beta_1=0.9, beta_2=0.999)
 optimizer = keras.optimizers.SGD(lr=0.01, decay=1e-4)
 ```
 
+* `lr`: 초기 학습률
+* `decay`: 스텝수($s$)의 역수
+* 케라스는 $c=1$을 기본값으로 사용.
+
 ### 지수 기반 스케줄링(exponential scheduling)
+
+* 학습률을 스텝의 반복횟수 $t$에 대한 아래 함수로 선언
+
+$$
+\eta(t) = \eta_0\, (0.1)^{t/s}
+$$
+
+* 학습률이 $s$ 스텝마다 10배씩 줄어듦.
 
 * 현재 에포크의 학습률을 받아 반환하는 함수 필요
 
@@ -610,6 +663,8 @@ optimizer = keras.optimizers.SGD(lr=0.01, decay=1e-4)
 def exponential_decay_fn(epoch):
     return 0.01 * 0.1**(epoch / 20)
 ```
+
+* 아래 방식처럼 $\eta_0$와 $s$를 설정한 클로저(closure)를 반환하는 함수도 활용 가능.
 
 ```python
 def exponential_decay(lr0, s):
@@ -620,16 +675,58 @@ def exponential_decay(lr0, s):
 exponential_decay_fn = exponential_decay(lr0=0.01, s=20)
 ```
 
-* 위 함수를 이용하여 LearningRateScheduler 콜백 함수 선언 후 `fit()` 메서드에 전달.
+* 이제 스케줄링 함수를 이용한 LearningRateScheduler 콜백 함수를 선언한 후 `fit()` 메서드에 전달.
+    * 에포크를 시작할 때마다 옵티마이저의 학습률 업데이트.
 
 ```python
 lr_scheduler = keras.callbacks.LearningRateScheduler(exponential_decay_fn)
+
 history = model.fit(X_train_scaled, y_train, epochs=n_epochs,
                     validation_data=(X_valid_scaled, y_valid),
                     callbacks=[lr_scheduler])
 ```
 
+* 에포크를 스텝마다 업데이트하려면 사용자 정의 콜백을 정의해야 함.
+
+* 예제: `on_batch_begin()`과 `on_epoch_end()` 메서드 재정의
+
+```python
+K = keras.backend
+class ExponentialDecay(keras.callbacks.Callback):
+    def __init__(self, s=40000):
+        super().__init__()
+        self.s = s
+
+    def on_batch_begin(self, batch, logs=None):
+        # Note: the `batch` argument is reset at each epoch
+        lr = K.get_value(self.model.optimizer.lr)
+        K.set_value(self.model.optimizer.lr, lr * 0.1**(1 / s))
+
+    def on_epoch_end(self, epoch, logs=None):
+        logs = logs or {}
+        logs['lr'] = K.get_value(self.model.optimizer.lr)
+```
+
+* 이후 아래와 같이 `fit()` 메서드에 콜백함수로 전달
+
+```python
+s = 20 * len(X_train) // 32        # 20 에포크 동안의 스텝 수, 배치크기는 32
+exp_decay = ExponentialDecay(s)
+
+history = model.fit(X_train_scaled, y_train, epochs=n_epochs,
+                    validation_data=(X_valid_scaled, y_valid),
+                    callbacks=[exp_decay])
+```
+
+* 에포크 당 스텝 수가 많으면 스텝마다 학습률을 조정하는 것이 좋음.
+
+* `keras.optimizers.schedules` 모듈 활용 가능. (잠시 뒤에 설명됨)
+
 ### 구간별 고정 스케줄링(piecewise constant scheduling)
+
+* 지정된 에포크 횟수가 지날 때마다 학습률 조정.
+
+* 적절한 학습률과 에포크 횟수를 잘 찾아야 함.
 
 * 지수 기반 스케줄링 방식과 비슷하게 구현
 
@@ -643,24 +740,50 @@ def piecewise_constant_fn(epoch):
         return 0.001
 ```
 
+* 또는
+
+```python
+def piecewise_constant(boundaries, values):
+    boundaries = np.array([0] + boundaries)
+    values = np.array(values)
+    def piecewise_constant_fn(epoch):
+        return values[np.argmax(boundaries > epoch) - 1]
+    return piecewise_constant_fn
+
+piecewise_constant_fn = piecewise_constant([5, 15], [0.01, 0.005, 0.001])
+```
+
+* 콜백함수 지정
+
 ```python
 lr_scheduler = keras.callbacks.LearningRateScheduler(piecewise_constant_fn)
+
+history = model.fit(X_train_scaled, y_train, epochs=n_epochs,
+                    validation_data=(X_valid_scaled, y_valid),
+                    callbacks=[lr_scheduler])
 ```
 
 ### 성능 기반 스케줄링(performance scheduling)
+
+* 지정된 스텝 수마다 검증오차 확인 후 오차가 줄어들지 않으면 지정된 `factor` 배 만큼 학습률 감소시킴.
+
+* `ReduceLROnPlateau` 콜백 클래스 활용
 
 ```python
 lr_scheduler = keras.callbacks.ReduceLROnPlateau(factor=0.5, patience=5)
 ```
 
-### tf.keras schedulers
+### tf.keras schedulers 모듈의 스케줄 클래스 활용
 
-* tf.keras에서만 지원됨.
+* 주의: 표준 Keras API 아니며, tf.keras에서만 지원됨.
+
+* keras.optimizers.schedules 모듈의 스케줄 클래스에 학습률 지정 후 옵티마이저에 전달
 
 * 에포크가 아니라 아니라 스텝마다 학습률 업데이트
-    * 스텝: 하나의 배치를 처리하는 단계
 
-* keras.optimizers.schedules에서 지정된 스케줄링 기법중에 하나를 선택하여 옵티마이저에게 전달
+#### 예제
+
+* 아래 옵티마이저는 앞서 정의한 `exponential_decay_fun()` 함수와 동일한 지수기반 스케줄링 기능 제공
 
 ```python
 s = 20 * len(X_train) // 32 # 전체 스텝 수 계산(에포크 20, 배치크기 32)
@@ -669,7 +792,26 @@ optimizer = keras.optimizers.SGD(learning_rate)
 
 ```
 
+#### 예제
+
+* 아래 옵티마이저는 구간별 고정 스케줄링 기능 제공
+
+```python
+learning_rate = keras.optimizers.schedules.PiecewiseConstantDecay(
+                    boundaries=[5. * n_steps_per_epoch, 15. * n_steps_per_epoch],
+                    values=[0.01, 0.005, 0.001])
+optimizer = keras.optimizers.SGD(learning_rate)
+```
+
 ### 1사이클 스케줄링(1cycle scheduling)
+
+
+
+
+
+
+
+
 
 * 매 반복마다 학습률을 조정하는 사용자 정의 콜백함수 선언해야 함.
     * 간단하지 않음. 
