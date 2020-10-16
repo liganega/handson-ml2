@@ -8,7 +8,7 @@
 checkpoint
 logs/*
 tf_logs/*
-notebooks/images/**/*.png
+# notebooks/images/**/*.png
 notebooks/images/**/*.dot
 notebooks/my_*
 # person.proto
