@@ -62,7 +62,7 @@
 - 방법 2: [Deepo](https://github.com/ufoym/deepo)에서 도커 이미지 활용
     * GPU 지원
     * 핸즈온 머신러닝 주피터 노트북 실행에 필요한 추가 패키지 설치 필요
-- 방법 3: 윈도우 10 + 아나콘다 + Tensorflow 2
+- 방법 3: 윈도우 10 + 아나콘다 + Tensorflow 2(GPU 지원)
     * 준비사항
         * MS의 [Visual Studio](https://visualstudio.microsoft.com/) 설치 
         * [Anaconda](https://www.anaconda.com/products/individual) 설치
