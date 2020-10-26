@@ -2,7 +2,7 @@
 
 #### 감사의 글
 
-자료를 공개한 저자 오렐리앙 제롱에게 깊은 감사를 드립니다. 이와 더불어 한빛미디어로부터 강의준비에 필요한 자료를 지원받았음을 밝히며, 이에 대해 진심어린 감사를 전합니다.
+자료를 공개한 저자 오렐리앙 제롱과 강의준비에 필요한 자료를 지원한 한빛아카데미에게 진심어린 감사를 전합니다.
 
 ### 슬라이드 목차
 
@@ -39,6 +39,9 @@
 - 11장 심층신경망 훈련 &nbsp;
     [[html]](./slides/handson-ml2-11.slides.html)
     [[pdf]](./slides/handson-ml2-11-slides.pdf)
+- 14장 합성곱신경망: 컴퓨터비전 &nbsp;
+    [[html]](./slides/handson-ml2-14.slides.html)
+    [[pdf]](./slides/handson-ml2-14-slides.pdf)
 - ...
 
 *주의: HTML을 이용하여 슬라이드를 사용할 경우 전진과 후진을 `space`와 `shift+space` 키를 활용할 것.*
