@@ -39,9 +39,13 @@
 - 11장 심층신경망 훈련 &nbsp;
     [[html]](./slides/handson-ml2-11.slides.html)
     [[pdf]](./slides/handson-ml2-11-slides.pdf)
-- 14장 합성곱신경망: 컴퓨터비전 &nbsp;
-    [[html]](./slides/handson-ml2-14.slides.html)
-    [[pdf]](./slides/handson-ml2-14-slides.pdf)
+- 14장 합성곱신경망: 컴퓨터비전
+    - 1부 &nbsp;
+        [[html]](./slides/handson-ml2-14-1.slides.html)
+        [[pdf]](./slides/handson-ml2-14-1-slides.pdf)
+    - 2부 &nbsp;
+        [[html]](./slides/handson-ml2-14-2.slides.html)
+        [[pdf]](./slides/handson-ml2-14-2-slides.pdf)
 - ...
 
 *주의: HTML을 이용하여 슬라이드를 사용할 경우 전진과 후진을 `space`와 `shift+space` 키를 활용할 것.*
