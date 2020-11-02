@@ -43,19 +43,9 @@
     - 1부 &nbsp;
         [[html]](./slides/handson-ml2-14-1.slides.html)
         [[pdf]](./slides/handson-ml2-14-1-slides.pdf)
-        - 시각피질 구조와 합성곱 신경망
-        - 합성곱 층
-        - 풀링 층
-        - CNN 구조
     - 2부 &nbsp;
         [[html]](./slides/handson-ml2-14-2.slides.html)
         [[pdf]](./slides/handson-ml2-14-2-slides.pdf)
-        - ResNet-34 CNN 구현
-        - 케라스 제공 사전훈련된 모델 활용
-        - 사전훈련된 모델 활용 전이학습
-        - 분류와 위치추정
-        - 객체탐지
-        - 시맨틱분할
 - ...
 
 *주의: HTML을 이용하여 슬라이드를 사용할 경우 전진과 후진을 `space`와 `shift+space` 키를 활용할 것.*
