@@ -14230,8 +14230,8 @@ global_avg_pool = keras.layers.Lambda(lambda X: tf.reduce_mean(X, axis=[1, 2]))<
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>(2~3개의 함성곱 층 + 풀링층)의 단순 반복</li>
-<li>총 16~19개의 함성곱 층 사용</li>
+<li>(2~3개의 합성곱 층 + 풀링층)의 단순 반복</li>
+<li>총 16~19개의 합성곱 층 사용</li>
 <li>추가적으로 2개의 은닉층과 출력층으로 구성된 밀집층 사용.</li>
 <li>다수의 <code>3x3</code> 커널 필터 사용</li>
 </ul>
@@ -14263,8 +14263,8 @@ global_avg_pool = keras.layers.Lambda(lambda X: tf.reduce_mean(X, axis=[1, 2]))<
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>ResNet-152: 152개의 함성곱 층 사용. 하지만 파라미터 수는 그렇게 많지 않음.</li>
-<li>ResNet-34: 34개의 함성곱 층 모델도 있음. (구글 코랩 노트북 참조)</li>
+<li>ResNet-152: 152개의 합성곱 층 사용. 하지만 파라미터 수는 그렇게 많지 않음.</li>
+<li>ResNet-34: 34개의 합성곱 층 모델도 있음. (구글 코랩 노트북 참조)</li>
 </ul>
 
 </div>
