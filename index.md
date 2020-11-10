@@ -46,7 +46,7 @@
     - 2부 &nbsp;
         [[html]](./slides/handson-ml2-14-2.slides.html)
         [[pdf]](./slides/handson-ml2-14-2-slides.pdf)
-- 15장 RNN과 CNN 활용: 시퀀스 처리 &nbsp;
+- 15장 RNN과 CNN 활용: 순차데이터 처리 &nbsp;
     [[html]](./slides/handson-ml2-15.slides.html)
     [[pdf]](./slides/handson-ml2-15-slides.pdf)
 - ...
