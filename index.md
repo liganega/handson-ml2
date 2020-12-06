@@ -49,6 +49,13 @@
 - 15장 RNN과 CNN 활용: 순차데이터 처리 &nbsp;
     [[html]](./slides/handson-ml2-15.slides.html)
     [[pdf]](./slides/handson-ml2-15-slides.pdf)
+- 18장 강화학습
+    - 1부 &nbsp;
+        [[html]](./slides/handson-ml2-18-1.slides.html)
+        [[pdf]](./slides/handson-ml2-18-1-slides.pdf)
+    - 2부 &nbsp;
+        [[html]](./slides/handson-ml2-18-2.slides.html)
+        [[pdf]](./slides/handson-ml2-12-2-slides.pdf)
 - ...
 
 *주의: HTML을 이용하여 슬라이드를 사용할 경우 전진과 후진을 `space`와 `shift+space` 키를 활용할 것.*
