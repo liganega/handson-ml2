@@ -55,10 +55,15 @@
         [[pdf]](./slides/handson-ml2-18-1-slides.pdf)
     - 2부 &nbsp;
         [[html]](./slides/handson-ml2-18-2.slides.html)
-        [[pdf]](./slides/handson-ml2-12-2-slides.pdf)
+        [[pdf]](./slides/handson-ml2-18-2-slides.pdf)
 - ...
 
 *주의: HTML을 이용하여 슬라이드를 사용할 경우 전진과 후진을 `space`와 `shift+space` 키를 활용할 것.*
+
+### 딥러닝 훈련 코드 모음집
+
+- [Keras Code Examples](https://keras.io/examples/)
+		- 다양한 주제에 대한 딥러닝 모델 구현 및 훈련방법 소개
 
 ### 주피터 노트북 학습
 
